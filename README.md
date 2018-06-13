@@ -34,4 +34,4 @@ cmake (クローンした聞々ハヤえもんのリポジトリ)/qt_gui -DCMAKE
 ```
 
 ## ライセンス
-[MITライセンス](https://opensource.org/licenses/mit-license.php)
+[GPL v3 ライセンス](https://www.gnu.org/licenses/gpl-3.0.html)
