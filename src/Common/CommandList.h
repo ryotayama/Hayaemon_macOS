@@ -7,7 +7,7 @@
 //--------------------------------------------------------------------------
 // COMMAND ID
 //--------------------------------------------------------------------------
-typedef enum CMDID {
+typedef enum {
 	// ファイルメニュー
 		ID_SAVEFILE,
 		ID_SAVEALLFILE,
@@ -227,6 +227,6 @@ typedef enum CMDID {
 		ID_ADDPRESET,
 		ID_DELETEPRESET,
 		ID_PRESET,
-};
+} CMDID;
 
 #endif // CommandListH
