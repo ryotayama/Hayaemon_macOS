@@ -4,6 +4,7 @@
 #include "ABLoopPosWnd.h"
 #include "MainWnd.h"
 #include "Platform.h"
+#include "Sound.h"
 #include "Utility.h"
 //----------------------------------------------------------------------------
 // コンストラクタ

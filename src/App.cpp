@@ -2,6 +2,9 @@
 // App.cpp : アプリケーションの管理を行う
 //----------------------------------------------------------------------------
 #include "App.h"
+#if _WIN32
+#include <Windows.h>
+#endif
 #include <QApplication>
 #include <QDir>
 #include <QFileInfo>

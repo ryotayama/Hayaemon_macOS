@@ -8,6 +8,7 @@
 #include <QAction>
 #include <QMenu>
 #include "MainWnd.h"
+#include "Menu_MainWnd.h"
 #include "Utility.h"
 
 //----------------------------------------------------------------------------

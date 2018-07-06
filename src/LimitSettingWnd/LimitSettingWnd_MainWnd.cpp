@@ -4,6 +4,9 @@
 #include "LimitSettingWnd_MainWnd.h"
 #include <math.h>
 #include "../MainWnd/MainWnd.h"
+#include "FreqSlider_MainWnd.h"
+#include "PitchSlider_MainWnd.h"
+#include "SpeedSlider_MainWnd.h"
 //----------------------------------------------------------------------------
 // コンストラクタ
 //----------------------------------------------------------------------------

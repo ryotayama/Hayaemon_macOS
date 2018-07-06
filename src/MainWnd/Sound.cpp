@@ -14,6 +14,8 @@
 #include "../Common/CommandList.h"
 #include "../Common/Define.h"
 #include "MainWnd.h"
+#include "Menu_MainWnd.h"
+#include "PanSlider_MainWnd.h"
 #include "Sound_inline.h"
 #include "Utility.h"
 //----------------------------------------------------------------------------

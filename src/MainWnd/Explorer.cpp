@@ -13,6 +13,7 @@
 #include "Platform.h"
 #include "PlayListView_MainWnd.h"
 #include "RMenu_Explorer.h"
+#include "Sound.h"
 
 #ifdef max
 # undef max

@@ -4,6 +4,8 @@
 #include "3DReverbCustomizeWnd.h"
 #include "../Common/CommandList.h"
 #include "MainWnd.h"
+#include "Menu_MainWnd.h"
+#include "Sound.h"
 //----------------------------------------------------------------------------
 // コンストラクタ
 //----------------------------------------------------------------------------

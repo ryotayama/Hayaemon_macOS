@@ -15,6 +15,7 @@
 #include "MainWnd.h"
 #include "Platform.h"
 #include "RMenu_ListView.h"
+#include "Sound.h"
 #include "Utility.h"
 
 #ifdef max

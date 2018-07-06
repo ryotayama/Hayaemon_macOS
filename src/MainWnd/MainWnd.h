@@ -5,7 +5,24 @@
 #define MainWndH
 
 class CApp;
+class CEQLabel_MainWnd;
+class CEQSlider_MainWnd;
+class CFreqLabel_MainWnd;
+class CFreqSlider_MainWnd;
+class CMenu_MainWnd;
+class CPanLabel_MainWnd;
+class CPanSlider_MainWnd;
+class CPitchLabel_MainWnd;
+class CPitchSlider_MainWnd;
 class CPlayListView_MainWnd;
+class CSound;
+class CSpeedLabel_MainWnd;
+class CSpeedSlider_MainWnd;
+class CTimeLabel_MainWnd;
+class CTimeSlider_MainWnd;
+class CToolBar_MainWnd;
+class CVolumeLabel_MainWnd;
+class CVolumeSlider_MainWnd;
 class QSound;
 class QTimer;
 class QUrl;
@@ -16,23 +33,6 @@ class QUrl;
 #include <QList>
 #include <QMainWindow>
 #include "../Common/Define.h"
-#include "EQLabel_MainWnd.h"
-#include "EQSlider_MainWnd.h"
-#include "FreqLabel_MainWnd.h"
-#include "FreqSlider_MainWnd.h"
-#include "Menu_MainWnd.h"
-#include "PanLabel_MainWnd.h"
-#include "PanSlider_MainWnd.h"
-#include "PitchLabel_MainWnd.h"
-#include "PitchSlider_MainWnd.h"
-#include "Sound.h"
-#include "SpeedLabel_MainWnd.h"
-#include "SpeedSlider_MainWnd.h"
-#include "TimeLabel_MainWnd.h"
-#include "TimeSlider_MainWnd.h"
-#include "ToolBar_MainWnd.h"
-#include "VolumeLabel_MainWnd.h"
-#include "VolumeSlider_MainWnd.h"
 #include "ui_MainWnd.h"
 //----------------------------------------------------------------------------
 // メインウィンドウの作成・管理を行うクラス
@@ -43,59 +43,7 @@ class CMainWnd : public QMainWindow, public Ui::MainWnd
 
 public: // 関数
 
-	CMainWnd(CApp & app): m_rApp(app), m_menu(app, *this), m_toolBar(*this),
-		m_timeLabel(*this), m_timeSlider(*this),
-		m_speedLabel(*this), m_speedSlider(*this), m_freqLabel(*this),
-		m_freqSlider(*this), m_pitchLabel(*this), m_pitchSlider(*this),
-		m_volumeLabel(*this), m_volumeSlider(*this), m_panLabel(*this),
-		m_panSlider(*this), m_eq20Label(*this), m_eq20Slider(*this),
-		m_eq25Label(*this), m_eq25Slider(*this),
-		m_eq31_5Label(*this), m_eq31_5Slider(*this),
-		m_eq40Label(*this), m_eq40Slider(*this),
-		m_eq50Label(*this), m_eq50Slider(*this),
-		m_eq63Label(*this), m_eq63Slider(*this),
-		m_eq80Label(*this), m_eq80Slider(*this),
-		m_eq100Label(*this), m_eq100Slider(*this),
-		m_eq125Label(*this), m_eq125Slider(*this),
-		m_eq160Label(*this), m_eq160Slider(*this),
-		m_eq200Label(*this), m_eq200Slider(*this),
-		m_eq250Label(*this), m_eq250Slider(*this),
-		m_eq315Label(*this), m_eq315Slider(*this),
-		m_eq400Label(*this), m_eq400Slider(*this),
-		m_eq500Label(*this), m_eq500Slider(*this),
-		m_eq630Label(*this), m_eq630Slider(*this),
-		m_eq800Label(*this), m_eq800Slider(*this),
-		m_eq1kLabel(*this), m_eq1kSlider(*this),
-		m_eq1_25kLabel(*this), m_eq1_25kSlider(*this),
-		m_eq1_6kLabel(*this), m_eq1_6kSlider(*this),
-		m_eq2kLabel(*this), m_eq2kSlider(*this),
-		m_eq2_5kLabel(*this), m_eq2_5kSlider(*this),
-		m_eq3_15kLabel(*this), m_eq3_15kSlider(*this),
-		m_eq4kLabel(*this), m_eq4kSlider(*this),
-		m_eq5kLabel(*this), m_eq5kSlider(*this),
-		m_eq6_3kLabel(*this), m_eq6_3kSlider(*this),
-		m_eq8kLabel(*this), m_eq8kSlider(*this),
-		m_eq10kLabel(*this), m_eq10kSlider(*this),
-		m_eq12_5kLabel(*this), m_eq12_5kSlider(*this),
-		m_eq16kLabel(*this), m_eq16kSlider(*this),
-		m_eq20kLabel(*this), m_eq20kSlider(*this),
-		m_sound(app, *this), m_soundEffect(app, *this, FALSE),
-		isInitFileRead(FALSE), bTimerPlay(FALSE), bTimerPlayNextDay(FALSE),
-		bTimerStop(FALSE), bTimerStopNextDay(FALSE), bReverb(FALSE),
-		b3DReverb(FALSE), bDelay(FALSE), bChorus(FALSE), bCompressor(FALSE),
-		bFlanger(FALSE), bGargle(FALSE), bDistortion(FALSE), bMarkerPlay(FALSE),
-		bCountLoop(FALSE), bInstantLoop(FALSE), bSetPositionAuto(FALSE),
-		m_bFinish(FALSE), nTimerPlayHour(0), nTimerPlayMinute(0), nTimerStopHour(0),
-		nTimerStopMinute(0), nIncSpeed(0), nIncFreq(0), nDecSpeed(0), nDecFreq(0),
-		nFreqVelo(0), nFreqAccel(0), nLoopCount(0), nCurrentLoopCount(0),
-		nIncSpeedMode(0), nIncFreqMode(0), nDecSpeedMode(0), nDecFreqMode(0),
-		nCurPlayTab(0), dwLastTime(0), lpSound(nullptr), m_nBpm(120),
-		m_nInterval(0), dwFadeoutStartTime(0), m_nLastDecimalDigit_pitch(0),
-		m_nLastDecimalDigit_freq(0), m_nLastDecimalDigit_speed(0),
-		m_dStartSeconds(0.0), m_dEndSeconds(0.0),
-		m_strLAMECommandLine(_T("--preset cbr 192")), m_updateThreadRunning(false),
-		m_timeThreadRunning(false), m_bRetryUpdate(FALSE), m_bForwarding(false),
-		m_bRewinding(false) { }
+	CMainWnd(CApp & app);
 	virtual ~CMainWnd();
 
 	virtual void AddDropFiles(const QList<QUrl> & urls, BOOL bClear);
@@ -319,86 +267,86 @@ public: // 関数
 protected: // メンバ変数
 
 	CApp & m_rApp;
-	CMenu_MainWnd m_menu;
-	CToolBar_MainWnd m_toolBar;
-	CTimeLabel_MainWnd m_timeLabel;
-	CTimeSlider_MainWnd m_timeSlider;
-	CSpeedLabel_MainWnd m_speedLabel;
-	CSpeedSlider_MainWnd m_speedSlider;
-	CFreqLabel_MainWnd m_freqLabel;
-	CFreqSlider_MainWnd m_freqSlider;
-	CPitchLabel_MainWnd m_pitchLabel;
-	CPitchSlider_MainWnd m_pitchSlider;
-	CVolumeLabel_MainWnd m_volumeLabel;
-	CVolumeSlider_MainWnd m_volumeSlider;
-	CPanLabel_MainWnd m_panLabel;
-	CPanSlider_MainWnd m_panSlider;
-	CEQLabel_MainWnd m_eq20Label;
-	CEQSlider_MainWnd m_eq20Slider;
-	CEQLabel_MainWnd m_eq25Label;
-	CEQSlider_MainWnd m_eq25Slider;
-	CEQLabel_MainWnd m_eq31_5Label;
-	CEQSlider_MainWnd m_eq31_5Slider;
-	CEQLabel_MainWnd m_eq40Label;
-	CEQSlider_MainWnd m_eq40Slider;
-	CEQLabel_MainWnd m_eq50Label;
-	CEQSlider_MainWnd m_eq50Slider;
-	CEQLabel_MainWnd m_eq63Label;
-	CEQSlider_MainWnd m_eq63Slider;
-	CEQLabel_MainWnd m_eq80Label;
-	CEQSlider_MainWnd m_eq80Slider;
-	CEQLabel_MainWnd m_eq100Label;
-	CEQSlider_MainWnd m_eq100Slider;
-	CEQLabel_MainWnd m_eq125Label;
-	CEQSlider_MainWnd m_eq125Slider;
-	CEQLabel_MainWnd m_eq160Label;
-	CEQSlider_MainWnd m_eq160Slider;
-	CEQLabel_MainWnd m_eq200Label;
-	CEQSlider_MainWnd m_eq200Slider;
-	CEQLabel_MainWnd m_eq250Label;
-	CEQSlider_MainWnd m_eq250Slider;
-	CEQLabel_MainWnd m_eq315Label;
-	CEQSlider_MainWnd m_eq315Slider;
-	CEQLabel_MainWnd m_eq400Label;
-	CEQSlider_MainWnd m_eq400Slider;
-	CEQLabel_MainWnd m_eq500Label;
-	CEQSlider_MainWnd m_eq500Slider;
-	CEQLabel_MainWnd m_eq630Label;
-	CEQSlider_MainWnd m_eq630Slider;
-	CEQLabel_MainWnd m_eq800Label;
-	CEQSlider_MainWnd m_eq800Slider;
-	CEQLabel_MainWnd m_eq1kLabel;
-	CEQSlider_MainWnd m_eq1kSlider;
-	CEQLabel_MainWnd m_eq1_25kLabel;
-	CEQSlider_MainWnd m_eq1_25kSlider;
-	CEQLabel_MainWnd m_eq1_6kLabel;
-	CEQSlider_MainWnd m_eq1_6kSlider;
-	CEQLabel_MainWnd m_eq2kLabel;
-	CEQSlider_MainWnd m_eq2kSlider;
-	CEQLabel_MainWnd m_eq2_5kLabel;
-	CEQSlider_MainWnd m_eq2_5kSlider;
-	CEQLabel_MainWnd m_eq3_15kLabel;
-	CEQSlider_MainWnd m_eq3_15kSlider;
-	CEQLabel_MainWnd m_eq4kLabel;
-	CEQSlider_MainWnd m_eq4kSlider;
-	CEQLabel_MainWnd m_eq5kLabel;
-	CEQSlider_MainWnd m_eq5kSlider;
-	CEQLabel_MainWnd m_eq6_3kLabel;
-	CEQSlider_MainWnd m_eq6_3kSlider;
-	CEQLabel_MainWnd m_eq8kLabel;
-	CEQSlider_MainWnd m_eq8kSlider;
-	CEQLabel_MainWnd m_eq10kLabel;
-	CEQSlider_MainWnd m_eq10kSlider;
-	CEQLabel_MainWnd m_eq12_5kLabel;
-	CEQSlider_MainWnd m_eq12_5kSlider;
-	CEQLabel_MainWnd m_eq16kLabel;
-	CEQSlider_MainWnd m_eq16kSlider;
-	CEQLabel_MainWnd m_eq20kLabel;
-	CEQSlider_MainWnd m_eq20kSlider;
+	std::unique_ptr<CMenu_MainWnd> m_menu;
+	std::unique_ptr<CToolBar_MainWnd> m_toolBar;
+	std::unique_ptr<CTimeLabel_MainWnd> m_timeLabel;
+	std::unique_ptr<CTimeSlider_MainWnd> m_timeSlider;
+	std::unique_ptr<CSpeedLabel_MainWnd> m_speedLabel;
+	std::unique_ptr<CSpeedSlider_MainWnd> m_speedSlider;
+	std::unique_ptr<CFreqLabel_MainWnd> m_freqLabel;
+	std::unique_ptr<CFreqSlider_MainWnd> m_freqSlider;
+	std::unique_ptr<CPitchLabel_MainWnd> m_pitchLabel;
+	std::unique_ptr<CPitchSlider_MainWnd> m_pitchSlider;
+	std::unique_ptr<CVolumeLabel_MainWnd> m_volumeLabel;
+	std::unique_ptr<CVolumeSlider_MainWnd> m_volumeSlider;
+	std::unique_ptr<CPanLabel_MainWnd> m_panLabel;
+	std::unique_ptr<CPanSlider_MainWnd> m_panSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq20Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq20Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq25Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq25Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq31_5Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq31_5Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq40Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq40Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq50Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq50Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq63Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq63Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq80Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq80Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq100Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq100Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq125Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq125Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq160Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq160Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq200Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq200Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq250Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq250Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq315Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq315Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq400Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq400Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq500Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq500Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq630Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq630Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq800Label;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq800Slider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq1kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq1kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq1_25kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq1_25kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq1_6kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq1_6kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq2kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq2kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq2_5kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq2_5kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq3_15kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq3_15kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq4kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq4kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq5kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq5kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq6_3kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq6_3kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq8kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq8kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq10kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq10kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq12_5kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq12_5kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq16kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq16kSlider;
+	std::unique_ptr<CEQLabel_MainWnd> m_eq20kLabel;
+	std::unique_ptr<CEQSlider_MainWnd> m_eq20kSlider;
 	std::vector<CPlayListView_MainWnd*> m_arrayList;
 
-	CSound m_sound;
-	CSound m_soundEffect; // 効果音
+	std::unique_ptr<CSound> m_sound;
+	std::unique_ptr<CSound> m_soundEffect; // 効果音
 
 	BOOL isInitFileRead; // INI ファイルがすでに読み込まれたかどうか
 	BOOL bTimerPlay; // タイマー再生が予約されているかどうか
@@ -483,21 +431,19 @@ public: // 定数
 
 public: // メンバ変数の取得・設定
 
-	CMenu_MainWnd & GetMenu() { return m_menu; }
+	CMenu_MainWnd & GetMenu() { return *m_menu; }
 	CExplorerBar & GetExplorerBar() { return *m_explorerBar; }
 	CExplorer & GetExplorer() { return *m_explorer; }
-	CSpeedLabel_MainWnd & GetSpeedLabel() { return m_speedLabel; }
-	CSpeedSlider_MainWnd & GetSpeedSlider() { return m_speedSlider; }
-	CFreqLabel_MainWnd & GetFreqLabel() { return m_freqLabel; }
-	CFreqSlider_MainWnd & GetFreqSlider() {
-		return m_freqSlider;
-	}
-	CPitchLabel_MainWnd & GetPitchLabel() { return m_pitchLabel; }
-	CPitchSlider_MainWnd & GetPitchSlider() { return m_pitchSlider; }
-	CVolumeLabel_MainWnd & GetVolumeLabel() { return m_volumeLabel; }
-	CVolumeSlider_MainWnd & GetVolumeSlider() { return m_volumeSlider; }
-	CPanLabel_MainWnd & GetPanLabel() { return m_panLabel; }
-	CPanSlider_MainWnd & GetPanSlider() { return m_panSlider; }
+	CSpeedLabel_MainWnd & GetSpeedLabel() { return *m_speedLabel; }
+	CSpeedSlider_MainWnd & GetSpeedSlider() { return *m_speedSlider; }
+	CFreqLabel_MainWnd & GetFreqLabel() { return *m_freqLabel; }
+	CFreqSlider_MainWnd & GetFreqSlider() { return *m_freqSlider; }
+	CPitchLabel_MainWnd & GetPitchLabel() { return *m_pitchLabel; }
+	CPitchSlider_MainWnd & GetPitchSlider() { return *m_pitchSlider; }
+	CVolumeLabel_MainWnd & GetVolumeLabel() { return *m_volumeLabel; }
+	CVolumeSlider_MainWnd & GetVolumeSlider() { return *m_volumeSlider; }
+	CPanLabel_MainWnd & GetPanLabel() { return *m_panLabel; }
+	CPanSlider_MainWnd & GetPanSlider() { return *m_panSlider; }
 	CTab_MainWnd & GetTab() { return *m_tab; }
 	CPlayListView_MainWnd & GetPlayList() {
 		int nSelect = m_tab->GetCurrentFocus();
@@ -512,7 +458,7 @@ public: // メンバ変数の取得・設定
 	std::vector<CPlayListView_MainWnd*> GetArrayList() {
 		return m_arrayList;
 	}
-	CSound & GetSound() { return m_sound; }
+	CSound & GetSound() { return *m_sound; }
 
 	int GetBpm() const { return m_nBpm; }
 
