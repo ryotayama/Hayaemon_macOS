@@ -291,6 +291,13 @@ void CToolBar_MainWnd::OnExplorerButtonSelected(bool checked)
 	m_rMainWnd.SetExplorerVisible(checked);
 }
 //----------------------------------------------------------------------------
+// 再生リストボタンが選択された
+//----------------------------------------------------------------------------
+void CToolBar_MainWnd::OnPlayListButtonSelected(bool checked)
+{
+	m_rMainWnd.SetPlayListVisible(checked);
+}
+//----------------------------------------------------------------------------
 // チェック状態の設定
 //----------------------------------------------------------------------------
 void CToolBar_MainWnd::CheckButton(int nID, BOOL fCheck)
@@ -379,6 +386,8 @@ void CToolBar_MainWnd::CreateConnections()
 					this, &CToolBar_MainWnd::OnAddMarkerButtonSelected);
 	connect(m_rMainWnd.deleteMarkerButton, &QToolButton::clicked,
 					this, &CToolBar_MainWnd::OnDeleteMarkerButtonSelected);
+	connect(m_rMainWnd.playlistButton, &QToolButton::clicked,
+					this, &CToolBar_MainWnd::OnPlayListButtonSelected);
 	connect(m_rMainWnd.explorerButton, &QToolButton::clicked,
 					this, &CToolBar_MainWnd::OnExplorerButtonSelected);
 }
