@@ -120,6 +120,8 @@ set(SRC_MAINWND
   ${SRC_DIR}/MainWnd/PlayPositionWnd.h
   ${SRC_DIR}/MainWnd/PlayRangeWnd.cpp
   ${SRC_DIR}/MainWnd/PlayRangeWnd.h
+  ${SRC_DIR}/MainWnd/PreferencesWnd.cpp
+  ${SRC_DIR}/MainWnd/PreferencesWnd.h
   ${SRC_DIR}/MainWnd/PresetMenu.cpp
   ${SRC_DIR}/MainWnd/PresetMenu.h
   ${SRC_DIR}/MainWnd/PresetNameInputWnd.cpp
@@ -231,6 +233,7 @@ qt5_wrap_ui(UI_MOC
   ${SRC_DIR}/MainWnd/OpenURLWnd.ui
   ${SRC_DIR}/MainWnd/PlayPositionWnd.ui
   ${SRC_DIR}/MainWnd/PlayRangeWnd.ui
+  ${SRC_DIR}/MainWnd/PreferencesWnd.ui
   ${SRC_DIR}/MainWnd/PresetNameInputWnd.ui
   ${SRC_DIR}/MainWnd/Reverb3DCustomizeWnd.ui
   ${SRC_DIR}/MainWnd/ReverbCustomizeWnd.ui
