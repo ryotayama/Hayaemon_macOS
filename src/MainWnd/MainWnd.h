@@ -255,6 +255,7 @@ public: // 関数
 	virtual void UpPitch(double pitch);
 	virtual void UpSpeed(double speed);
 	virtual void WriteInitFile();
+	void SetPreferences();
 
 	// メッセージ
 	virtual void OnClose();
@@ -406,6 +407,7 @@ protected: // メンバ変数
 	bool m_timeThreadRunning;
 	bool m_bForwarding;
 	bool m_bRewinding;
+	bool m_bUseNativeMenuBar;
 
 public: // 定数
 

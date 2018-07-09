@@ -57,6 +57,7 @@
 #include "PlayListView_MainWnd.h"
 #include "PlayPositionWnd.h"
 #include "PlayRangeWnd.h"
+#include "PreferencesWnd.h"
 #include "PresetNameInputWnd.h"
 #include "ReverbCustomizeWnd.h"
 #include "Sound.h"
@@ -166,7 +167,7 @@ CMainWnd::CMainWnd(CApp & app)
 		m_dStartSeconds(0.0), m_dEndSeconds(0.0),
 		m_strLAMECommandLine(_T("--preset cbr 192")), m_updateThreadRunning(false),
 		m_bRetryUpdate(FALSE), m_timeThreadRunning(false), m_bForwarding(false),
-		m_bRewinding(false)
+		m_bRewinding(false), m_bUseNativeMenuBar(true)
 {
 }
 //----------------------------------------------------------------------------
@@ -2357,6 +2358,11 @@ void CMainWnd::OpenInitFile()
 		if(GetPrivateProfileInt(_T("Window"), _T("Zoomed"), 0, chPath))
 			this->showMaximized();
 	}
+#if __APPLE__
+	m_bUseNativeMenuBar = GetPrivateProfileInt(
+		_T("Options"), _T("UseNativeMenuBar"), 1, chPath) ? true : false;
+	menuBar()->setNativeMenuBar(m_bUseNativeMenuBar);
+#endif
 }
 //----------------------------------------------------------------------------
 // INI ファイルを開く
@@ -8106,6 +8112,26 @@ void CMainWnd::WriteInitFile()
 	}
 	WritePrivateProfileString(_T("Options"), _T("Language"), lang,
 		initFilePath.c_str());
+	
+#if __APPLE__
+	_stprintf_s(buf, _T("%d"), m_bUseNativeMenuBar ? 1 : 0);
+	WritePrivateProfileString(_T("Options"), _T("UseNativeMenuBar"), buf,
+		initFilePath.c_str());
+#endif
+}
+//----------------------------------------------------------------------------
+// 詳細設定
+//----------------------------------------------------------------------------
+void CMainWnd::SetPreferences()
+{
+	CPreferencesWnd wnd;
+	wnd.attach_menubar_checkbox_->setChecked(!m_bUseNativeMenuBar);
+	
+	if (wnd.exec() != QDialog::Accepted) {
+		return;
+	}
+
+	m_bUseNativeMenuBar = !wnd.attach_menubar_checkbox_->isChecked();
 }
 //----------------------------------------------------------------------------
 // 閉じられようとしている
@@ -8120,9 +8146,6 @@ void CMainWnd::OnClose()
 LRESULT CMainWnd::OnCreate()
 {
 	Ui::MainWnd::setupUi(this);
-#if __APPLE__
-	menuBar()->setNativeMenuBar(false);
-#endif
 	setAcceptDrops(true);
 
 	// メニューの作成

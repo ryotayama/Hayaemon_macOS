@@ -2832,6 +2832,13 @@ void CMenu_MainWnd::OnCopyTimeMenuSelected()
 	m_rMainWnd.CopyTime();
 }
 //----------------------------------------------------------------------------
+// システム → 詳細設定メニューが選択された
+//----------------------------------------------------------------------------
+void CMenu_MainWnd::OnPreferencesMenuSelected()
+{
+	m_rMainWnd.SetPreferences();
+}
+//----------------------------------------------------------------------------
 // ヘルプ → マニュアルメニューが選択された
 //----------------------------------------------------------------------------
 void CMenu_MainWnd::OnManualMenuSelected()
@@ -3846,6 +3853,8 @@ void CMenu_MainWnd::CreateConnections()
 					this, &CMenu_MainWnd::OnTopMostMenuSelected);
 	connect(m_rMainWnd.actionCopyTime, &QAction::triggered,
 					this, &CMenu_MainWnd::OnCopyTimeMenuSelected);
+	connect(m_rMainWnd.actionPreferences, &QAction::triggered,
+					this, &CMenu_MainWnd::OnPreferencesMenuSelected);
 	// Help
 	connect(m_rMainWnd.actionManual, &QAction::triggered,
 					this, &CMenu_MainWnd::OnManualMenuSelected);

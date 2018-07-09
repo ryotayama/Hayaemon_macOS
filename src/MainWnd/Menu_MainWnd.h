@@ -375,6 +375,7 @@ public: // 関数
 	void OnResetAllMenuSelected();
 	void OnTopMostMenuSelected();
 	void OnCopyTimeMenuSelected();
+	void OnPreferencesMenuSelected();
 	void OnManualMenuSelected();
 	void OnUpdateCheckMenuSelected();
 	void OnVersionInfoMenuSelected();

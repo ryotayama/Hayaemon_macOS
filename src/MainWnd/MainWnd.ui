@@ -1151,6 +1151,7 @@
     <addaction name="actionCopyTime"/>
     <addaction name="separator"/>
     <addaction name="menuLanguage"/>
+    <addaction name="actionPreferences"/>
    </widget>
    <widget class="QMenu" name="menuFile_F">
     <property name="title">
@@ -3435,6 +3436,14 @@
   <action name="actionCloseAll">
    <property name="text">
     <string>Close all(&amp;C)</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::PreferencesRole</enum>
    </property>
   </action>
  </widget>
