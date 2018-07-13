@@ -8148,6 +8148,12 @@ LRESULT CMainWnd::OnCreate()
 	Ui::MainWnd::setupUi(this);
 	setAcceptDrops(true);
 
+#if _WIN32
+	speedGroupBox->setFlat(true);
+	volumeGroupBox->setFlat(true);
+	eqGroupBox->setFlat(true);
+#endif
+
 	// メニューの作成
 	if(!m_menu->Create()) {
 		m_rApp.ShowError(tr("failed to create menu."));
