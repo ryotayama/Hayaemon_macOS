@@ -18,9 +18,21 @@
     <normaloff>:/icon/resource/icon1.ico</normaloff>:/icon/resource/icon1.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1000">
+   <layout class="QVBoxLayout" name="mainWndLayout" stretch="1,1000">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="toolButtonLayout">
+      <property name="spacing">
+       <number>5</number>
+      </property>
       <item>
        <widget class="QToolButton" name="prevButton">
         <property name="toolTip">
@@ -348,6 +360,9 @@
       </property>
       <widget class="QWidget" name="layoutWidget">
        <layout class="QVBoxLayout" name="explorerLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
         <item>
          <widget class="CExplorerBar" name="m_explorerBar"/>
         </item>
@@ -364,7 +379,10 @@
        </layout>
       </widget>
       <widget class="QWidget" name="layoutWidget">
-       <layout class="QVBoxLayout" name="verticalLayout_4">
+       <layout class="QVBoxLayout" name="controllerLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
         <item>
          <widget class="CSliderCtrlCore" name="timeSlider">
           <property name="orientation">
@@ -380,7 +398,16 @@
           <property name="flat">
            <bool>false</bool>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
+          <layout class="QVBoxLayout" name="speedGroupBoxLayout">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
@@ -469,7 +496,16 @@
           <property name="flat">
            <bool>false</bool>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout">
+          <layout class="QVBoxLayout" name="volumeGroupBoxLayout">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
@@ -530,7 +566,17 @@
           <property name="flat">
            <bool>false</bool>
           </property>
-          <layout class="QGridLayout" name="eqLayout"/>
+          <layout class="QGridLayout" name="eqLayout">
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>5</number>
+           </property>
+          </layout>
          </widget>
         </item>
         <item>

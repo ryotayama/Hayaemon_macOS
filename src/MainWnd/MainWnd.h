@@ -408,6 +408,8 @@ protected: // メンバ変数
 	bool m_bForwarding;
 	bool m_bRewinding;
 	bool m_bUseNativeMenuBar;
+	bool m_bManualControlSpacing;
+	int m_controlSpacing;
 
 public: // 定数
 
@@ -496,6 +498,7 @@ private:
 											 QAction * visibilityAction, const QString &title,
 											 void (CMainWnd::*callback)(bool visible),
 											 const QPoint & pos);
+	void UpdateLayout();
 	void closeEvent(QCloseEvent *event) final;
 	void dragEnterEvent(QDragEnterEvent * e) final;
 	void dropEvent(QDropEvent * e) final;

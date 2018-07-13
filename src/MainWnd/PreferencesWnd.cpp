@@ -29,3 +29,11 @@ void CPreferencesWnd::Apply()
 	accepted();
 }
 //----------------------------------------------------------------------------
+// モーダルダイアログを表示
+//----------------------------------------------------------------------------
+int CPreferencesWnd::exec()
+{
+	control_spacing_spinbox_->setEnabled(control_spacing_checkbox_->isChecked());
+	return QDialog::exec();
+}
+//----------------------------------------------------------------------------

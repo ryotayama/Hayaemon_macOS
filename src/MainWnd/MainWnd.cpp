@@ -70,6 +70,17 @@
 #include "VolumeLabel_MainWnd.h"
 #include "VolumeSlider_MainWnd.h"
 //----------------------------------------------------------------------------
+// 定数
+//----------------------------------------------------------------------------
+namespace {
+#if __APPLE__
+const bool kDefaultManualControlSpacing = true;
+#else
+const bool kDefaultManualControlSpacing = false;
+#endif
+const int kDefaultControlSpacing = 5;
+}  // namespace
+//----------------------------------------------------------------------------
 // コンストラクタ
 //----------------------------------------------------------------------------
 CMainWnd::CMainWnd(CApp & app)
@@ -167,7 +178,9 @@ CMainWnd::CMainWnd(CApp & app)
 		m_dStartSeconds(0.0), m_dEndSeconds(0.0),
 		m_strLAMECommandLine(_T("--preset cbr 192")), m_updateThreadRunning(false),
 		m_bRetryUpdate(FALSE), m_timeThreadRunning(false), m_bForwarding(false),
-		m_bRewinding(false), m_bUseNativeMenuBar(true)
+		m_bRewinding(false), m_bUseNativeMenuBar(true),
+		m_bManualControlSpacing(kDefaultManualControlSpacing),
+		m_controlSpacing(kDefaultControlSpacing)
 {
 }
 //----------------------------------------------------------------------------
@@ -2363,6 +2376,12 @@ void CMainWnd::OpenInitFile()
 		_T("Options"), _T("UseNativeMenuBar"), 1, chPath) ? true : false;
 	menuBar()->setNativeMenuBar(m_bUseNativeMenuBar);
 #endif
+	m_bManualControlSpacing = GetPrivateProfileInt(
+		_T("Options"), _T("ManualControlSpacing"),
+		kDefaultManualControlSpacing ? 1 : 0, chPath) ? true : false;
+	m_controlSpacing = GetPrivateProfileInt(
+		_T("Options"), _T("ControlSpacing"), kDefaultControlSpacing, chPath);
+	UpdateLayout();
 }
 //----------------------------------------------------------------------------
 // INI ファイルを開く
@@ -8118,6 +8137,12 @@ void CMainWnd::WriteInitFile()
 	WritePrivateProfileString(_T("Options"), _T("UseNativeMenuBar"), buf,
 		initFilePath.c_str());
 #endif
+	_stprintf_s(buf, _T("%d"), m_bManualControlSpacing ? 1 : 0);
+	WritePrivateProfileString(_T("Options"), _T("ManualControlSpacing"), buf,
+		initFilePath.c_str());
+	_stprintf_s(buf, _T("%d"), m_controlSpacing);
+	WritePrivateProfileString(_T("Options"), _T("ControlSpacing"), buf,
+		initFilePath.c_str());
 }
 //----------------------------------------------------------------------------
 // 詳細設定
@@ -8126,12 +8151,24 @@ void CMainWnd::SetPreferences()
 {
 	CPreferencesWnd wnd;
 	wnd.attach_menubar_checkbox_->setChecked(!m_bUseNativeMenuBar);
+	bool oldManualControlSpacing = m_bManualControlSpacing;
+	auto oldControlSpacing = m_controlSpacing;
+	wnd.control_spacing_checkbox_->setChecked(m_bManualControlSpacing);
+	wnd.control_spacing_spinbox_->setValue(m_controlSpacing);
 	
 	if (wnd.exec() != QDialog::Accepted) {
 		return;
 	}
 
 	m_bUseNativeMenuBar = !wnd.attach_menubar_checkbox_->isChecked();
+	auto bManualControlSpacing = wnd.control_spacing_checkbox_->isChecked();
+	auto controlSpacing = wnd.control_spacing_spinbox_->value();
+	if (oldManualControlSpacing != bManualControlSpacing ||
+			oldControlSpacing != controlSpacing) {
+		m_bManualControlSpacing = bManualControlSpacing;
+		m_controlSpacing = controlSpacing;
+		UpdateLayout();
+	}
 }
 //----------------------------------------------------------------------------
 // 閉じられようとしている
@@ -8683,6 +8720,24 @@ void CMainWnd::ShowContextMenu(QWidget * widget, QMenu * menu,
 	}
 
 	contextMenu.exec(widget->mapToGlobal(pos));
+}
+//----------------------------------------------------------------------------
+// レイアウトを更新
+//----------------------------------------------------------------------------
+void CMainWnd::UpdateLayout()
+{
+	int s = m_bManualControlSpacing ? m_controlSpacing : -1;
+	mainWndLayout->setSpacing(s);
+	mainWndLayout->setContentsMargins(-1, s, -1, s);
+	toolButtonLayout->setSpacing(s);
+	explorerLayout->setSpacing(s);
+	controllerLayout->setSpacing(s);
+	speedGroupBoxLayout->setSpacing(s);
+	speedGroupBoxLayout->setContentsMargins(-1, s, -1, s);
+	volumeGroupBoxLayout->setSpacing(s);
+	volumeGroupBoxLayout->setContentsMargins(-1, s, -1, s);
+	eqLayout->setSpacing(s);
+	eqLayout->setContentsMargins(-1, s, -1, s);
 }
 //----------------------------------------------------------------------------
 // 終了イベント
