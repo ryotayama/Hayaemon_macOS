@@ -594,7 +594,7 @@
      <x>0</x>
      <y>0</y>
      <width>816</width>
-     <height>22</height>
+     <height>31</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuPlay_P">
@@ -1212,6 +1212,8 @@
     <addaction name="separator"/>
     <addaction name="actionFileSave"/>
     <addaction name="actionFileSaveAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionLAMECommandLineOption"/>
     <addaction name="separator"/>
     <addaction name="actionFileExit"/>
    </widget>
@@ -3490,6 +3492,11 @@
    </property>
    <property name="menuRole">
     <enum>QAction::PreferencesRole</enum>
+   </property>
+  </action>
+  <action name="actionLAMECommandLineOption">
+   <property name="text">
+    <string>LAME Command Line Option(&amp;L)...</string>
    </property>
   </action>
  </widget>

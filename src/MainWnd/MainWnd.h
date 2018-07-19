@@ -180,6 +180,7 @@ public: // 関数
 	virtual void SetChangeLR();
 	virtual void SetChangeLR(BOOL bChangeLR);
 	virtual void SetNextMarker();
+	virtual void SetLAMECommandLine(tstring strCommandLine);
 	virtual void SetLowBattery();
 	virtual void SetLowBattery(BOOL bLowBattery);
 	virtual void SetNormalize();
@@ -238,6 +239,7 @@ public: // 関数
 	virtual void ShowDistortionCustomizeWnd();
 	virtual void ShowFlangerCustomizeWnd();
 	virtual void ShowGargleCustomizeWnd();
+	virtual void ShowLAMECommandLineWnd();
 	virtual void ShowOpenURLWnd(BOOL bAdd = FALSE);
 	virtual void ShowOpenFileDialog(BOOL bClear);
 	virtual void ShowOpenFolderDialog(BOOL bClear);
@@ -400,6 +402,7 @@ protected: // メンバ変数
 	double m_dStartSeconds; // 再生範囲の開始位置
 	double m_dEndSeconds; // 再生範囲の停止位置
 	tstring m_strLAMECommandLine;
+	tstring m_strLAMEPath;
 	std::thread m_updateThread;
 	bool m_updateThreadRunning;
 	BOOL m_bRetryUpdate;
@@ -477,6 +480,8 @@ public: // メンバ変数の取得・設定
 
 	tstring GetStrSaveFormat() { return strSaveFormat; }
 	tstring GetStrLAMECommandLine() { return m_strLAMECommandLine; }
+	tstring GetStrLAMEPath() const { return m_strLAMEPath; }
+	tstring GetStrLAMEPathDefault() const;
 
 public:
 

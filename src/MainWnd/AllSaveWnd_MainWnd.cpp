@@ -12,8 +12,8 @@ CAllSaveWnd_MainWnd::CAllSaveWnd_MainWnd(CMainWnd & mainWnd)
 	setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
 	m_Combo->addItem(tr("WAVE file(*.wav)"));
-#if _WIN32
 	m_Combo->addItem(tr("MP3 file(*.mp3)"));
+#if _WIN32
 	m_Combo->addItem(tr("Ogg Vorbis file(*.ogg)"));
 #endif
 

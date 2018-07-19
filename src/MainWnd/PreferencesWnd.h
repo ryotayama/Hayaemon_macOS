@@ -11,12 +11,18 @@
 //----------------------------------------------------------------------------
 class CPreferencesWnd : public QDialog, public Ui::PreferencesWnd
 {
+	Q_OBJECT
+
 public: // 関数
 
 	CPreferencesWnd();
 
 	void Apply();
 	int exec();
+
+private:
+
+	void BrowseLAME();
 };
 //----------------------------------------------------------------------------
 

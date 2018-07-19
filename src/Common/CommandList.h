@@ -11,6 +11,7 @@ typedef enum {
 	// ファイルメニュー
 		ID_SAVEFILE,
 		ID_SAVEALLFILE,
+		ID_LAMECOMMANDLINE,
 	// 表示メニュー
 		ID_TIMESLIDER,
 		ID_EXPLORER,

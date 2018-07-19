@@ -17,6 +17,7 @@ lupdate -verbose \
   MainWnd/Explorer.cpp \
   MainWnd/FlangerCustomizeWnd.ui \
   MainWnd/GargleCustomizeWnd.ui \
+  MainWnd/LAMECommandLineWnd.ui \
   MainWnd/MainWnd.cpp \
   MainWnd/MainWnd.ui \
   MainWnd/Menu_MainWnd.cpp \
@@ -25,6 +26,7 @@ lupdate -verbose \
   MainWnd/PlayListView_MainWnd.cpp \
   MainWnd/PlayPositionWnd.ui \
   MainWnd/PlayRangeWnd.ui \
+  MainWnd/PreferencesWnd.cpp \
   MainWnd/PreferencesWnd.ui \
   MainWnd/PresetNameInputWnd.ui \
   MainWnd/RMenu_Explorer.cpp \

@@ -111,217 +111,223 @@
 <context>
     <name>CMainWnd</name>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="424"/>
+        <location filename="MainWnd/MainWnd.cpp" line="434"/>
         <source>failed to create toolbar.</source>
         <translation>ツールバーの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="430"/>
+        <location filename="MainWnd/MainWnd.cpp" line="440"/>
         <source>failed to create time label.</source>
         <translation>再生時間表示用ラベルの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="436"/>
+        <location filename="MainWnd/MainWnd.cpp" line="446"/>
         <source>failed to create time slider.</source>
         <translation>再生時間設定用スライダの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="442"/>
+        <location filename="MainWnd/MainWnd.cpp" line="452"/>
         <source>failed to create explorer bar.</source>
         <translation>エクスプローラ用ツールバーの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="448"/>
+        <location filename="MainWnd/MainWnd.cpp" line="458"/>
         <source>failed to create explorer.</source>
         <translation>エクスプローラの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="461"/>
+        <location filename="MainWnd/MainWnd.cpp" line="471"/>
         <source>failed to create speed label.</source>
         <translation>再生速度表示用ラベルの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="467"/>
+        <location filename="MainWnd/MainWnd.cpp" line="477"/>
         <source>failed to create speed slider.</source>
         <translation>再生速度設定用スライダの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="504"/>
+        <location filename="MainWnd/MainWnd.cpp" line="514"/>
         <source>failed to create frequency label.</source>
         <translation>再生周波数表示用ラベルの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="510"/>
+        <location filename="MainWnd/MainWnd.cpp" line="520"/>
         <source>failed to create frequency slider.</source>
         <translation>再生周波数設定用スライダの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="547"/>
+        <location filename="MainWnd/MainWnd.cpp" line="557"/>
         <source>failed to create pitch label.</source>
         <translation>音程表示用ラベルの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="553"/>
+        <location filename="MainWnd/MainWnd.cpp" line="563"/>
         <source>failed to create pitch slider.</source>
         <translation>音程設定用スライダの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="591"/>
+        <location filename="MainWnd/MainWnd.cpp" line="601"/>
         <source>failed to create volume label.</source>
         <translation>音量表示用ラベルの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="597"/>
+        <location filename="MainWnd/MainWnd.cpp" line="607"/>
         <source>failed to create volume slider.</source>
         <translation>音量設定用スライダの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="612"/>
+        <location filename="MainWnd/MainWnd.cpp" line="622"/>
         <source>failed to create pan label.</source>
         <translation>パン表示用ラベルの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="618"/>
+        <location filename="MainWnd/MainWnd.cpp" line="628"/>
         <source>failed to create pan slider.</source>
         <translation>パン設定用スライダの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="681"/>
+        <location filename="MainWnd/MainWnd.cpp" line="691"/>
         <source>failed to create EQ(%1Hz) label.</source>
         <translation>イコライザ ( %1Hz ) 表示用ラベルの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="690"/>
+        <location filename="MainWnd/MainWnd.cpp" line="700"/>
         <source>failed to create EQ(%1Hz) slider.</source>
         <translation>イコライザ ( %1Hz ) 設定用スライダの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="730"/>
+        <location filename="MainWnd/MainWnd.cpp" line="740"/>
         <source>failed to create tab.</source>
         <translation>タブの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="734"/>
+        <location filename="MainWnd/MainWnd.cpp" line="744"/>
         <source>No Title</source>
         <translation>無題</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="737"/>
+        <location filename="MainWnd/MainWnd.cpp" line="747"/>
         <source>failed to create playlist.</source>
         <translation>プレイリスト用リストビューの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7126"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7171"/>
         <source>Readable file(*.wav *.cda *.mp* *.ogg *.wma *.aiff *.aif *.ape *.flac *.m4a *.m4b *.mp4 *.aac *.nsf *.avi *.wmv *.mkv *.flv *.ini *.m3u *.m3u8);;Playable file(*.wav *.cda *.mp* *.ogg *.wma *.aiff *.aif *.ape *.flac *.m4a *.m4b *.mp4 *.aac *.nsf *.avi *.wmv *.mkv *.flv);;WAVE file(*.wav);;CDA file(*.cda);;MP3 file(*.mp3);;MP2 file(*.mp2);;MP1 file(*.mp1);;Ogg Vorbis file(*.ogg);;AIFF file(*.aiff;*.aif);;APE file(*.ape);;FLAC file(*.flac);;AAC file(*.m4a;*.m4b;*.mp4;*.aac);;NSF file(*.nsf);;AVI file(*.avi);;WMV file(*.wmv);;MKV file(*.mkv);;FLV file(*.flv);;Settings file(*.ini);;Playlist file(*.m3u;*.m3u8);;All file (*.*)</source>
         <translation>読込可能ファイル(*.wav *.cda *.mp* *.ogg *.wma *.aiff *.aif *.ape *.flac *.m4a *.m4b *.mp4 *.aac *.nsf *.avi *.wmv *.mkv *.flv *.ini *.m3u *.m3u8);;再生可能ファイル(*.wav *.cda *.mp* *.ogg *.wma *.aiff *.aif *.ape *.flac *.m4a *.m4b *.mp4 *.aac *.nsf *.avi *.wmv *.mkv *.flv);;WAVE ファイル(*.wav);;CDA ファイル(*.cda);;MP3 ファイル(*.mp3);;MP2 ファイル(*.mp2);;MP1 ファイル(*.mp1);;Ogg Vorbis ファイル(*.ogg);;AIFF ファイル(*.aiff *.aif);;APE ファイル(*.ape);;FLAC ファイル(*.flac);;AAC ファイル(*.m4a *.m4b *.mp4 *.aac);;NSF ファイル(*.nsf);;AVI ファイル(*.avi);;WMV ファイル(*.wmv);;MKV ファイル(*.mkv);;FLV ファイル(*.flv);;設定状態ファイル(*.ini);;プレイリストファイル(*.m3u *.m3u8);;すべてのファイル (*.*)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7226"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7271"/>
         <source>WAVE file(*.wav)</source>
         <translation>WAVE ファイル(*.wav)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7227"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7272"/>
         <source>MP3 file(*.mp3)</source>
         <translation>MP3 ファイル(*.mp3)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7228"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7273"/>
         <source>Ogg Vorbis file(*.ogg)</source>
         <translation>Ogg Vorbis ファイル(*.ogg)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7229"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7274"/>
         <source>Settings(*.ini)</source>
         <translation>設定状態(*.ini)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7230"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7275"/>
         <source>Absolute path playlist file(*.m3u)</source>
         <translation>絶対パス プレイリストファイル(*.m3u)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7231"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7276"/>
         <source>Relative path playlist file(*.m3u)</source>
         <translation>相対パス プレイリストファイル(*.m3u)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7232"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7277"/>
         <source>Absolute path playlist file(*.m3u8)</source>
         <translation>絶対パス プレイリストファイル(*.m3u8)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7233"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7278"/>
         <source>Relative path playlist file(*.m3u8)</source>
         <translation>相対パス プレイリストファイル(*.m3u8)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7260"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7307"/>
         <source>Save</source>
         <translation>名前を付けて保存</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7261"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7308"/>
         <source>This software can&apos;t override input/output same file.</source>
         <translation>同一ファイルの上書きには対応していません。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7324"/>
-        <location filename="MainWnd/MainWnd.cpp" line="7333"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7370"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7379"/>
         <source>Save file</source>
         <translation>名前を付けて保存</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7325"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7371"/>
+        <source>To save MP3 file, lame.exe is required.
+Select lame executable in the Preferences dialog.</source>
+        <translation>MP3形式での保存には、LAME.EXEが必要です。
+詳細設定ダイアログでLAMEの実行ファイルのパスを設定してください。</translation>
+    </message>
+    <message>
         <source>To save MP3 file, lame.exe is required.
 Put lame.exe in the same directory as hayaemon.exe.</source>
-        <translation>MP3形式での保存には、LAME.EXEが必要です。
+        <translation type="vanished">MP3形式での保存には、LAME.EXEが必要です。
 Hayaemon.exeと同じディレクトリにLAME.EXEを置いて下さい。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="7334"/>
+        <location filename="MainWnd/MainWnd.cpp" line="7380"/>
         <source>To save Ogg Vorbis file, oggenc2.exe is required.
 Put oggenc2.exe in the same directory as hayaemon.exe.</source>
         <translation>Ogg Vorbis形式での保存には、oggenc2.exeが必要です。
 Hayaemon.exeと同じディレクトリにoggenc2.exeを置いて下さい。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="8176"/>
+        <location filename="MainWnd/MainWnd.cpp" line="8238"/>
         <source>failed to create menu.</source>
         <translation>メニューの作成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="8252"/>
+        <location filename="MainWnd/MainWnd.cpp" line="8314"/>
         <source>failed to init BASS.DLL.</source>
         <translation>BASS の初期化に失敗しました。</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="8629"/>
+        <location filename="MainWnd/MainWnd.cpp" line="8704"/>
         <source>Show Position Slider(&amp;S)</source>
         <translation>再生位置スライダーの表示(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="8638"/>
+        <location filename="MainWnd/MainWnd.cpp" line="8713"/>
         <source>Show Speed Control(&amp;S)</source>
         <translation>再生速度コントロールの表示(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="8647"/>
+        <location filename="MainWnd/MainWnd.cpp" line="8722"/>
         <source>Show Frequency Control(&amp;S)</source>
         <translation>再生周波数コントロールの表示(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="8656"/>
+        <location filename="MainWnd/MainWnd.cpp" line="8731"/>
         <source>Show Pitch Control(&amp;S)</source>
         <translation>音程コントロールの表示(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="8665"/>
+        <location filename="MainWnd/MainWnd.cpp" line="8740"/>
         <source>Show Volume Control(&amp;S)</source>
         <translation>音量コントロールの表示(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.cpp" line="8674"/>
+        <location filename="MainWnd/MainWnd.cpp" line="8749"/>
         <source>Show Pan Control(&amp;S)</source>
         <translation>パンの表示(&amp;V)</translation>
     </message>
@@ -329,44 +335,44 @@ Hayaemon.exeと同じディレクトリにoggenc2.exeを置いて下さい。</t
 <context>
     <name>CMenu_MainWnd</name>
     <message>
-        <location filename="MainWnd/Menu_MainWnd.cpp" line="2863"/>
+        <location filename="MainWnd/Menu_MainWnd.cpp" line="2870"/>
         <source>Offline</source>
         <translation>オフライン</translation>
     </message>
     <message>
-        <location filename="MainWnd/Menu_MainWnd.cpp" line="2864"/>
+        <location filename="MainWnd/Menu_MainWnd.cpp" line="2871"/>
         <source>Failed to connect to the Internet.</source>
         <translation>インターネットに接続できません。</translation>
     </message>
     <message>
-        <location filename="MainWnd/Menu_MainWnd.cpp" line="2889"/>
+        <location filename="MainWnd/Menu_MainWnd.cpp" line="2896"/>
         <source>Question</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="MainWnd/Menu_MainWnd.cpp" line="2890"/>
+        <location filename="MainWnd/Menu_MainWnd.cpp" line="2897"/>
         <source>The latest version has been released.
 Do you want to access the official site?</source>
         <translation>最新版が公開されています。
 公式サイトにアクセスしますか？</translation>
     </message>
     <message>
-        <location filename="MainWnd/Menu_MainWnd.cpp" line="2905"/>
+        <location filename="MainWnd/Menu_MainWnd.cpp" line="2912"/>
         <source>Information</source>
         <translation>情報</translation>
     </message>
     <message>
-        <location filename="MainWnd/Menu_MainWnd.cpp" line="2906"/>
+        <location filename="MainWnd/Menu_MainWnd.cpp" line="2913"/>
         <source>Your version is latest.</source>
         <translation>お使いのバージョンは最新です。</translation>
     </message>
     <message>
-        <location filename="MainWnd/Menu_MainWnd.cpp" line="2924"/>
+        <location filename="MainWnd/Menu_MainWnd.cpp" line="2931"/>
         <source> stable</source>
         <translation> 安定版</translation>
     </message>
     <message>
-        <location filename="MainWnd/Menu_MainWnd.cpp" line="2935"/>
+        <location filename="MainWnd/Menu_MainWnd.cpp" line="2942"/>
         <source>Version</source>
         <translation>バージョン情報</translation>
     </message>
@@ -420,6 +426,19 @@ Do you want to access the official site?</source>
         <location filename="MainWnd/PlayListView_MainWnd.cpp" line="194"/>
         <source>Path</source>
         <translation>場所</translation>
+    </message>
+</context>
+<context>
+    <name>CPreferencesWnd</name>
+    <message>
+        <location filename="MainWnd/PreferencesWnd.cpp" line="49"/>
+        <source>Executable file(*.exe);;</source>
+        <translation>実行ファイル(*.exe);;</translation>
+    </message>
+    <message>
+        <location filename="MainWnd/PreferencesWnd.cpp" line="51"/>
+        <source>All file (*.*)</source>
+        <translation>全てのファイル(*.*)</translation>
     </message>
 </context>
 <context>
@@ -788,6 +807,14 @@ Do you want to access the official site?</source>
     </message>
 </context>
 <context>
+    <name>LAMECommandLineWnd</name>
+    <message>
+        <location filename="MainWnd/LAMECommandLineWnd.ui" line="20"/>
+        <source>LAME Command Line Setting</source>
+        <translation>LAMEコマンドライン設定</translation>
+    </message>
+</context>
+<context>
     <name>LimitSettingWnd</name>
     <message>
         <location filename="LimitSettingWnd/LimitSettingWnd.ui" line="14"/>
@@ -982,9 +1009,9 @@ Do you want to access the official site?</source>
     </message>
     <message>
         <location filename="MainWnd/MainWnd.ui" line="663"/>
-        <location filename="MainWnd/MainWnd.ui" line="1319"/>
-        <location filename="MainWnd/MainWnd.ui" line="1953"/>
-        <location filename="MainWnd/MainWnd.ui" line="2001"/>
+        <location filename="MainWnd/MainWnd.ui" line="1321"/>
+        <location filename="MainWnd/MainWnd.ui" line="1955"/>
+        <location filename="MainWnd/MainWnd.ui" line="2003"/>
         <source>Volume(&amp;V)</source>
         <translation>音量(&amp;V)</translation>
     </message>
@@ -995,9 +1022,9 @@ Do you want to access the official site?</source>
     </message>
     <message>
         <location filename="MainWnd/MainWnd.ui" line="687"/>
-        <location filename="MainWnd/MainWnd.ui" line="1897"/>
-        <location filename="MainWnd/MainWnd.ui" line="1929"/>
-        <location filename="MainWnd/MainWnd.ui" line="1977"/>
+        <location filename="MainWnd/MainWnd.ui" line="1899"/>
+        <location filename="MainWnd/MainWnd.ui" line="1931"/>
+        <location filename="MainWnd/MainWnd.ui" line="1979"/>
         <source>Speed(&amp;S)</source>
         <translation>再生速度(&amp;S)</translation>
     </message>
@@ -1015,9 +1042,9 @@ Do you want to access the official site?</source>
     </message>
     <message>
         <location filename="MainWnd/MainWnd.ui" line="747"/>
-        <location filename="MainWnd/MainWnd.ui" line="1905"/>
-        <location filename="MainWnd/MainWnd.ui" line="1937"/>
-        <location filename="MainWnd/MainWnd.ui" line="1985"/>
+        <location filename="MainWnd/MainWnd.ui" line="1907"/>
+        <location filename="MainWnd/MainWnd.ui" line="1939"/>
+        <location filename="MainWnd/MainWnd.ui" line="1987"/>
         <source>Frequency(&amp;F)</source>
         <translation>再生周波数(&amp;F)</translation>
     </message>
@@ -1028,9 +1055,9 @@ Do you want to access the official site?</source>
     </message>
     <message>
         <location filename="MainWnd/MainWnd.ui" line="807"/>
-        <location filename="MainWnd/MainWnd.ui" line="1913"/>
-        <location filename="MainWnd/MainWnd.ui" line="1945"/>
-        <location filename="MainWnd/MainWnd.ui" line="1993"/>
+        <location filename="MainWnd/MainWnd.ui" line="1915"/>
+        <location filename="MainWnd/MainWnd.ui" line="1947"/>
+        <location filename="MainWnd/MainWnd.ui" line="1995"/>
         <source>Pitch(&amp;P)</source>
         <translation>音程(&amp;P)</translation>
     </message>
@@ -1116,7 +1143,7 @@ Do you want to access the official site?</source>
     </message>
     <message>
         <location filename="MainWnd/MainWnd.ui" line="1099"/>
-        <location filename="MainWnd/MainWnd.ui" line="1921"/>
+        <location filename="MainWnd/MainWnd.ui" line="1923"/>
         <source>Visible(&amp;V)</source>
         <translation>表示(&amp;V)</translation>
     </message>
@@ -1146,1427 +1173,1432 @@ Do you want to access the official site?</source>
         <translation>ファイル(&amp;F)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1220"/>
+        <location filename="MainWnd/MainWnd.ui" line="1222"/>
         <source>Edit(&amp;E)</source>
         <translation>編集(&amp;E)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1227"/>
+        <location filename="MainWnd/MainWnd.ui" line="1229"/>
         <source>Help(&amp;H)</source>
         <translation>ヘルプ(&amp;H)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1246"/>
+        <location filename="MainWnd/MainWnd.ui" line="1248"/>
         <source>Play/Pause(&amp;P)</source>
         <translation>再生/一時停止(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1251"/>
+        <location filename="MainWnd/MainWnd.ui" line="1253"/>
         <source>Stop(&amp;S)</source>
         <translation>停止(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1256"/>
+        <location filename="MainWnd/MainWnd.ui" line="1258"/>
         <source>Reset Volume(&amp;R)</source>
         <translation>デフォルトに戻す(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1261"/>
+        <location filename="MainWnd/MainWnd.ui" line="1263"/>
         <source>0%(&amp;A)</source>
         <translation>0%(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1266"/>
+        <location filename="MainWnd/MainWnd.ui" line="1268"/>
         <source>10%(&amp;B)</source>
         <translation>10%(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1271"/>
+        <location filename="MainWnd/MainWnd.ui" line="1273"/>
         <source>20%(&amp;C)</source>
         <translation>20%(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1276"/>
+        <location filename="MainWnd/MainWnd.ui" line="1278"/>
         <source>30%(&amp;D)</source>
         <translation>30%(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1281"/>
+        <location filename="MainWnd/MainWnd.ui" line="1283"/>
         <source>40%(&amp;E)</source>
         <translation>40%(&amp;E)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1286"/>
+        <location filename="MainWnd/MainWnd.ui" line="1288"/>
         <source>50%(&amp;F)</source>
         <translation>50%(&amp;F)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1291"/>
+        <location filename="MainWnd/MainWnd.ui" line="1293"/>
         <source>60%(&amp;G)</source>
         <translation>60%(&amp;G)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1296"/>
+        <location filename="MainWnd/MainWnd.ui" line="1298"/>
         <source>70%(&amp;H)</source>
         <translation>70%(&amp;H)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1301"/>
+        <location filename="MainWnd/MainWnd.ui" line="1303"/>
         <source>80%(&amp;I)</source>
         <translation>80%(&amp;I)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1306"/>
+        <location filename="MainWnd/MainWnd.ui" line="1308"/>
         <source>90%(&amp;J)</source>
         <translation>90%(&amp;J)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1311"/>
+        <location filename="MainWnd/MainWnd.ui" line="1313"/>
         <source>100%(&amp;K)</source>
         <translation>100%(&amp;K)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1327"/>
-        <location filename="MainWnd/MainWnd.ui" line="2009"/>
+        <location filename="MainWnd/MainWnd.ui" line="1329"/>
+        <location filename="MainWnd/MainWnd.ui" line="2011"/>
         <source>Pan(&amp;P)</source>
         <translation>パン(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1332"/>
+        <location filename="MainWnd/MainWnd.ui" line="1334"/>
         <source>Reset Speed(&amp;R)</source>
         <translation>デフォルトに戻す(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1337"/>
-        <location filename="MainWnd/MainWnd.ui" line="1526"/>
+        <location filename="MainWnd/MainWnd.ui" line="1339"/>
+        <location filename="MainWnd/MainWnd.ui" line="1528"/>
         <source>50%(&amp;A)</source>
         <translation>50%(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1342"/>
-        <location filename="MainWnd/MainWnd.ui" line="1531"/>
+        <location filename="MainWnd/MainWnd.ui" line="1344"/>
+        <location filename="MainWnd/MainWnd.ui" line="1533"/>
         <source>60%(&amp;B)</source>
         <translation>60%(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1347"/>
-        <location filename="MainWnd/MainWnd.ui" line="1536"/>
+        <location filename="MainWnd/MainWnd.ui" line="1349"/>
+        <location filename="MainWnd/MainWnd.ui" line="1538"/>
         <source>70%(&amp;C)</source>
         <translation>70%(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1352"/>
-        <location filename="MainWnd/MainWnd.ui" line="1541"/>
+        <location filename="MainWnd/MainWnd.ui" line="1354"/>
+        <location filename="MainWnd/MainWnd.ui" line="1543"/>
         <source>80%(&amp;D)</source>
         <translation>80%(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1357"/>
-        <location filename="MainWnd/MainWnd.ui" line="1546"/>
+        <location filename="MainWnd/MainWnd.ui" line="1359"/>
+        <location filename="MainWnd/MainWnd.ui" line="1548"/>
         <source>90%(&amp;E)</source>
         <translation>90%(&amp;E)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1362"/>
-        <location filename="MainWnd/MainWnd.ui" line="1551"/>
+        <location filename="MainWnd/MainWnd.ui" line="1364"/>
+        <location filename="MainWnd/MainWnd.ui" line="1553"/>
         <source>100%(&amp;F)</source>
         <translation>100%(&amp;F)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1367"/>
-        <location filename="MainWnd/MainWnd.ui" line="1556"/>
+        <location filename="MainWnd/MainWnd.ui" line="1369"/>
+        <location filename="MainWnd/MainWnd.ui" line="1558"/>
         <source>110%(&amp;G)</source>
         <translation>110%(&amp;G)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1372"/>
-        <location filename="MainWnd/MainWnd.ui" line="1561"/>
+        <location filename="MainWnd/MainWnd.ui" line="1374"/>
+        <location filename="MainWnd/MainWnd.ui" line="1563"/>
         <source>120%(&amp;H)</source>
         <translation>120%(&amp;H)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1377"/>
-        <location filename="MainWnd/MainWnd.ui" line="1566"/>
+        <location filename="MainWnd/MainWnd.ui" line="1379"/>
+        <location filename="MainWnd/MainWnd.ui" line="1568"/>
         <source>130%(&amp;I)</source>
         <translation>130(&amp;I)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1382"/>
-        <location filename="MainWnd/MainWnd.ui" line="1571"/>
+        <location filename="MainWnd/MainWnd.ui" line="1384"/>
+        <location filename="MainWnd/MainWnd.ui" line="1573"/>
         <source>140%(&amp;J)</source>
         <translation>140%(&amp;J)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1387"/>
-        <location filename="MainWnd/MainWnd.ui" line="1576"/>
+        <location filename="MainWnd/MainWnd.ui" line="1389"/>
+        <location filename="MainWnd/MainWnd.ui" line="1578"/>
         <source>150%(&amp;K)</source>
         <translation>150%(&amp;K)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1392"/>
-        <location filename="MainWnd/MainWnd.ui" line="1581"/>
+        <location filename="MainWnd/MainWnd.ui" line="1394"/>
+        <location filename="MainWnd/MainWnd.ui" line="1583"/>
         <source>160%(&amp;L)</source>
         <translation>160%(&amp;L)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1397"/>
-        <location filename="MainWnd/MainWnd.ui" line="1586"/>
+        <location filename="MainWnd/MainWnd.ui" line="1399"/>
+        <location filename="MainWnd/MainWnd.ui" line="1588"/>
         <source>170%(&amp;M)</source>
         <translation>170%(&amp;M)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1402"/>
-        <location filename="MainWnd/MainWnd.ui" line="1591"/>
+        <location filename="MainWnd/MainWnd.ui" line="1404"/>
+        <location filename="MainWnd/MainWnd.ui" line="1593"/>
         <source>180%(&amp;N)</source>
         <translation>180%(&amp;N)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1407"/>
-        <location filename="MainWnd/MainWnd.ui" line="1596"/>
+        <location filename="MainWnd/MainWnd.ui" line="1409"/>
+        <location filename="MainWnd/MainWnd.ui" line="1598"/>
         <source>190%(&amp;O)</source>
         <translation>190%(&amp;O)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1412"/>
-        <location filename="MainWnd/MainWnd.ui" line="1601"/>
+        <location filename="MainWnd/MainWnd.ui" line="1414"/>
+        <location filename="MainWnd/MainWnd.ui" line="1603"/>
         <source>200%(&amp;P)</source>
         <translation>200%(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1417"/>
-        <location filename="MainWnd/MainWnd.ui" line="1606"/>
+        <location filename="MainWnd/MainWnd.ui" line="1419"/>
+        <location filename="MainWnd/MainWnd.ui" line="1608"/>
         <source>250%(&amp;Q)</source>
         <translation>250%(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1422"/>
-        <location filename="MainWnd/MainWnd.ui" line="1611"/>
+        <location filename="MainWnd/MainWnd.ui" line="1424"/>
+        <location filename="MainWnd/MainWnd.ui" line="1613"/>
         <source>300%(&amp;R)</source>
         <translation>300%(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1427"/>
-        <location filename="MainWnd/MainWnd.ui" line="1616"/>
+        <location filename="MainWnd/MainWnd.ui" line="1429"/>
+        <location filename="MainWnd/MainWnd.ui" line="1618"/>
         <source>350%(&amp;S)</source>
         <translation>350%(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1432"/>
-        <location filename="MainWnd/MainWnd.ui" line="1621"/>
+        <location filename="MainWnd/MainWnd.ui" line="1434"/>
+        <location filename="MainWnd/MainWnd.ui" line="1623"/>
         <source>400%(&amp;T)</source>
         <translation>400%(&amp;T)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1437"/>
-        <location filename="MainWnd/MainWnd.ui" line="1626"/>
+        <location filename="MainWnd/MainWnd.ui" line="1439"/>
+        <location filename="MainWnd/MainWnd.ui" line="1628"/>
         <source>Turn down 0.1%(&amp;0)</source>
         <translation>0.1%下げる(&amp;0)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1442"/>
-        <location filename="MainWnd/MainWnd.ui" line="1631"/>
+        <location filename="MainWnd/MainWnd.ui" line="1444"/>
+        <location filename="MainWnd/MainWnd.ui" line="1633"/>
         <source>Turn down 1%(&amp;1)</source>
         <translation>1%下げる(&amp;1)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1447"/>
-        <location filename="MainWnd/MainWnd.ui" line="1636"/>
+        <location filename="MainWnd/MainWnd.ui" line="1449"/>
+        <location filename="MainWnd/MainWnd.ui" line="1638"/>
         <source>Turn down 2%(&amp;2)</source>
         <translation>2%下げる(&amp;2)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1452"/>
-        <location filename="MainWnd/MainWnd.ui" line="1641"/>
+        <location filename="MainWnd/MainWnd.ui" line="1454"/>
+        <location filename="MainWnd/MainWnd.ui" line="1643"/>
         <source>Turn down 3%(&amp;3)</source>
         <translation>3%下げる(&amp;3)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1457"/>
-        <location filename="MainWnd/MainWnd.ui" line="1646"/>
+        <location filename="MainWnd/MainWnd.ui" line="1459"/>
+        <location filename="MainWnd/MainWnd.ui" line="1648"/>
         <source>Turn down 5%(&amp;5)</source>
         <translation>5%下げる(&amp;5)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1462"/>
-        <location filename="MainWnd/MainWnd.ui" line="1651"/>
+        <location filename="MainWnd/MainWnd.ui" line="1464"/>
+        <location filename="MainWnd/MainWnd.ui" line="1653"/>
         <source>Turn down 10%(&amp;T)</source>
         <translation>10%下げる(&amp;T)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1467"/>
-        <location filename="MainWnd/MainWnd.ui" line="1656"/>
+        <location filename="MainWnd/MainWnd.ui" line="1469"/>
+        <location filename="MainWnd/MainWnd.ui" line="1658"/>
         <source>Turn up 0.1%(&amp;Z)</source>
         <translation>0.1%上げる(&amp;Z)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1472"/>
-        <location filename="MainWnd/MainWnd.ui" line="1661"/>
+        <location filename="MainWnd/MainWnd.ui" line="1474"/>
+        <location filename="MainWnd/MainWnd.ui" line="1663"/>
         <source>Turn up 1%(&amp;A)</source>
         <translation>1%上げる(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1477"/>
-        <location filename="MainWnd/MainWnd.ui" line="1666"/>
+        <location filename="MainWnd/MainWnd.ui" line="1479"/>
+        <location filename="MainWnd/MainWnd.ui" line="1668"/>
         <source>Turn up 2%(&amp;B)</source>
         <translation>2%上げる(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1482"/>
-        <location filename="MainWnd/MainWnd.ui" line="1671"/>
+        <location filename="MainWnd/MainWnd.ui" line="1484"/>
+        <location filename="MainWnd/MainWnd.ui" line="1673"/>
         <source>Turn up 3%(&amp;C)</source>
         <translation>3%上げる(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1487"/>
-        <location filename="MainWnd/MainWnd.ui" line="1676"/>
+        <location filename="MainWnd/MainWnd.ui" line="1489"/>
+        <location filename="MainWnd/MainWnd.ui" line="1678"/>
         <source>Turn up 5%(&amp;D)</source>
         <translation>5%上げる(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1492"/>
-        <location filename="MainWnd/MainWnd.ui" line="1681"/>
+        <location filename="MainWnd/MainWnd.ui" line="1494"/>
+        <location filename="MainWnd/MainWnd.ui" line="1683"/>
         <source>Turn up 10%(&amp;E)</source>
         <translation>10%上げる(&amp;E)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1500"/>
-        <location filename="MainWnd/MainWnd.ui" line="1689"/>
-        <location filename="MainWnd/MainWnd.ui" line="1748"/>
+        <location filename="MainWnd/MainWnd.ui" line="1502"/>
+        <location filename="MainWnd/MainWnd.ui" line="1691"/>
+        <location filename="MainWnd/MainWnd.ui" line="1750"/>
         <source>0 digit(&amp;0)</source>
         <translation>0桁(&amp;0)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1508"/>
-        <location filename="MainWnd/MainWnd.ui" line="1697"/>
-        <location filename="MainWnd/MainWnd.ui" line="1756"/>
+        <location filename="MainWnd/MainWnd.ui" line="1510"/>
+        <location filename="MainWnd/MainWnd.ui" line="1699"/>
+        <location filename="MainWnd/MainWnd.ui" line="1758"/>
         <source>1 digit(&amp;1)</source>
         <translation>1桁(&amp;1)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1516"/>
-        <location filename="MainWnd/MainWnd.ui" line="1705"/>
-        <location filename="MainWnd/MainWnd.ui" line="1764"/>
+        <location filename="MainWnd/MainWnd.ui" line="1518"/>
+        <location filename="MainWnd/MainWnd.ui" line="1707"/>
+        <location filename="MainWnd/MainWnd.ui" line="1766"/>
         <source>2 digit(&amp;2)</source>
         <translation>2桁(&amp;2)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1521"/>
+        <location filename="MainWnd/MainWnd.ui" line="1523"/>
         <source>Reset Frequency(&amp;R)</source>
         <translation>デフォルトに戻す(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1710"/>
+        <location filename="MainWnd/MainWnd.ui" line="1712"/>
         <source>Reset pitch(&amp;R)</source>
         <translation>デフォルトに戻す(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1715"/>
+        <location filename="MainWnd/MainWnd.ui" line="1717"/>
         <source>Flat(&amp;1)</source>
         <translation>半音下げる(&amp;1)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1720"/>
+        <location filename="MainWnd/MainWnd.ui" line="1722"/>
         <source>Double flat(&amp;2)</source>
         <translation>全音下げる(&amp;2)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1725"/>
+        <location filename="MainWnd/MainWnd.ui" line="1727"/>
         <source>Down 1 Octave(&amp;3)</source>
         <translation>1オクターブ下げる(&amp;3)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1730"/>
+        <location filename="MainWnd/MainWnd.ui" line="1732"/>
         <source>Sharp(&amp;A)</source>
         <translation>半音上げる(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1735"/>
+        <location filename="MainWnd/MainWnd.ui" line="1737"/>
         <source>Double sharp(&amp;B)</source>
         <translation>全音上げる(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1740"/>
+        <location filename="MainWnd/MainWnd.ui" line="1742"/>
         <source>Up 1 Octave(&amp;C)</source>
         <translation>1オクターブ上げる(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1769"/>
+        <location filename="MainWnd/MainWnd.ui" line="1771"/>
         <source>♭12(&amp;A)</source>
         <translation>♭12(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1774"/>
+        <location filename="MainWnd/MainWnd.ui" line="1776"/>
         <source>♭11(&amp;B)</source>
         <translation>♭11(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1779"/>
+        <location filename="MainWnd/MainWnd.ui" line="1781"/>
         <source>♭10(&amp;C)</source>
         <translation>♭10(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1784"/>
+        <location filename="MainWnd/MainWnd.ui" line="1786"/>
         <source>♭9(&amp;D)</source>
         <translation>♭9(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1789"/>
+        <location filename="MainWnd/MainWnd.ui" line="1791"/>
         <source>♭8(&amp;E)</source>
         <translation>♭8(&amp;E)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1794"/>
+        <location filename="MainWnd/MainWnd.ui" line="1796"/>
         <source>♭7(&amp;F)</source>
         <translation>♭7(&amp;F)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1799"/>
+        <location filename="MainWnd/MainWnd.ui" line="1801"/>
         <source>♭6(&amp;G)</source>
         <translation>♭6(&amp;G)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1804"/>
+        <location filename="MainWnd/MainWnd.ui" line="1806"/>
         <source>♭5(&amp;H)</source>
         <translation>♭5(&amp;H)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1809"/>
+        <location filename="MainWnd/MainWnd.ui" line="1811"/>
         <source>♭4(&amp;I)</source>
         <translation>♭4(&amp;I)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1814"/>
+        <location filename="MainWnd/MainWnd.ui" line="1816"/>
         <source>♭3(&amp;J)</source>
         <translation>♭3(&amp;J)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1819"/>
+        <location filename="MainWnd/MainWnd.ui" line="1821"/>
         <source>♭2(&amp;K)</source>
         <translation>♭2(&amp;K)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1824"/>
+        <location filename="MainWnd/MainWnd.ui" line="1826"/>
         <source>♭1(&amp;L)</source>
         <translation>♭1(&amp;L)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1829"/>
+        <location filename="MainWnd/MainWnd.ui" line="1831"/>
         <source>0(&amp;M)</source>
         <translation>0(&amp;M)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1834"/>
+        <location filename="MainWnd/MainWnd.ui" line="1836"/>
         <source>#1(&amp;N)</source>
         <oldsource>#1(N)</oldsource>
         <translation>#1(&amp;N)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1839"/>
+        <location filename="MainWnd/MainWnd.ui" line="1841"/>
         <source>#2(&amp;O)</source>
         <translation>#2(&amp;O)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1844"/>
+        <location filename="MainWnd/MainWnd.ui" line="1846"/>
         <source>#3(&amp;P)</source>
         <translation>#3(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1849"/>
+        <location filename="MainWnd/MainWnd.ui" line="1851"/>
         <source>#4(&amp;Q)</source>
         <translation>#4(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1854"/>
+        <location filename="MainWnd/MainWnd.ui" line="1856"/>
         <source>#5(&amp;R)</source>
         <translation>#5(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1859"/>
+        <location filename="MainWnd/MainWnd.ui" line="1861"/>
         <source>#6(&amp;S)</source>
         <translation>#6(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1864"/>
+        <location filename="MainWnd/MainWnd.ui" line="1866"/>
         <source>#7(&amp;T)</source>
         <translation>#7(&amp;T)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1869"/>
+        <location filename="MainWnd/MainWnd.ui" line="1871"/>
         <source>#8(&amp;U)</source>
         <translation>#8(&amp;U)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1874"/>
+        <location filename="MainWnd/MainWnd.ui" line="1876"/>
         <source>#9(&amp;V)</source>
         <translation>#8(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1879"/>
+        <location filename="MainWnd/MainWnd.ui" line="1881"/>
         <source>#10(&amp;W)</source>
         <translation>#10(&amp;W)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1884"/>
+        <location filename="MainWnd/MainWnd.ui" line="1886"/>
         <source>#11(&amp;X)</source>
         <translation>#11(&amp;X)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1889"/>
+        <location filename="MainWnd/MainWnd.ui" line="1891"/>
         <source>#12(&amp;Y)</source>
         <translation>#12(&amp;Y)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1961"/>
+        <location filename="MainWnd/MainWnd.ui" line="1963"/>
         <source>PAN(&amp;P)</source>
         <translation>パン(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="1969"/>
-        <location filename="MainWnd/MainWnd.ui" line="2017"/>
+        <location filename="MainWnd/MainWnd.ui" line="1971"/>
+        <location filename="MainWnd/MainWnd.ui" line="2019"/>
         <source>Graphic Equalizer(&amp;G)</source>
         <translation>グラフィックイコライザ(&amp;G)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2022"/>
+        <location filename="MainWnd/MainWnd.ui" line="2024"/>
         <source>Set AB Loop(A) To Current Position(&amp;A)</source>
         <translation>現在位置をABループ(A)に設定(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2027"/>
+        <location filename="MainWnd/MainWnd.ui" line="2029"/>
         <source>Set AB Loop(B) To Current Position(&amp;B)</source>
         <translation>現在位置をABループ(B)に設定(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2035"/>
+        <location filename="MainWnd/MainWnd.ui" line="2037"/>
         <source>AB Loop(A) Pos Setting(&amp;C)...</source>
         <translation>ABループ(A)の位置設定(&amp;C)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2043"/>
+        <location filename="MainWnd/MainWnd.ui" line="2045"/>
         <source>AB Loop(B) Pos Setting(&amp;D)...</source>
         <translation>ABループ(B)の位置設定(&amp;D)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2051"/>
-        <location filename="MainWnd/MainWnd.ui" line="2083"/>
+        <location filename="MainWnd/MainWnd.ui" line="2053"/>
+        <location filename="MainWnd/MainWnd.ui" line="2085"/>
         <source>Single loop(&amp;1)</source>
         <translation>1曲ループ(&amp;1)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2059"/>
-        <location filename="MainWnd/MainWnd.ui" line="2091"/>
+        <location filename="MainWnd/MainWnd.ui" line="2061"/>
+        <location filename="MainWnd/MainWnd.ui" line="2093"/>
         <source>All loop(&amp;T)</source>
         <translation>全曲ループ(&amp;T)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2067"/>
+        <location filename="MainWnd/MainWnd.ui" line="2069"/>
         <source>Random play(&amp;H)</source>
         <translation>ランダム再生(&amp;H)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2075"/>
+        <location filename="MainWnd/MainWnd.ui" line="2077"/>
         <source>Continuous play(&amp;C)</source>
         <translation>連続再生(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2099"/>
+        <location filename="MainWnd/MainWnd.ui" line="2101"/>
         <source>Random(&amp;H)</source>
         <translation>ランダム再生(&amp;H)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2107"/>
+        <location filename="MainWnd/MainWnd.ui" line="2109"/>
         <source>Continue(&amp;C)</source>
         <translation>連続再生(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2115"/>
+        <location filename="MainWnd/MainWnd.ui" line="2117"/>
         <source>Same Artist(&amp;S)</source>
         <translation>同じアーティストの曲を再生(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2120"/>
+        <location filename="MainWnd/MainWnd.ui" line="2122"/>
         <source>Previous(&amp;V)</source>
         <translation>前へ(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2125"/>
+        <location filename="MainWnd/MainWnd.ui" line="2127"/>
         <source>Next(&amp;N)</source>
         <translation>次へ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2130"/>
+        <location filename="MainWnd/MainWnd.ui" line="2132"/>
         <source>Head(&amp;T)</source>
         <translation>頭出し(&amp;T)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2138"/>
+        <location filename="MainWnd/MainWnd.ui" line="2140"/>
         <source>Rewind(&amp;R)</source>
         <comment>1</comment>
         <extracomment>Action</extracomment>
         <translation>巻き戻し(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2146"/>
+        <location filename="MainWnd/MainWnd.ui" line="2148"/>
         <source>Forward(&amp;A)</source>
         <translation>早送り(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2154"/>
+        <location filename="MainWnd/MainWnd.ui" line="2156"/>
         <source>Marker play(&amp;M)</source>
         <translation>マーカー再生(&amp;M)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2159"/>
+        <location filename="MainWnd/MainWnd.ui" line="2161"/>
         <source>Add a marker(&amp;A)</source>
         <translation>マーカー追加(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2164"/>
+        <location filename="MainWnd/MainWnd.ui" line="2166"/>
         <source>Delete a marker(&amp;D)</source>
         <translation>マーカー削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2172"/>
-        <location filename="MainWnd/MainWnd.ui" line="2188"/>
+        <location filename="MainWnd/MainWnd.ui" line="2174"/>
+        <location filename="MainWnd/MainWnd.ui" line="2190"/>
         <source>Loop when adding a marker(&amp;I)</source>
         <translation>マーカー追加時にループ(&amp;I)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2180"/>
-        <location filename="MainWnd/MainWnd.ui" line="2196"/>
+        <location filename="MainWnd/MainWnd.ui" line="2182"/>
+        <location filename="MainWnd/MainWnd.ui" line="2198"/>
         <source>Set position automatic when adjusting marker position(&amp;S)</source>
         <translation>マーカー調整時の再生位置連動(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2204"/>
+        <location filename="MainWnd/MainWnd.ui" line="2206"/>
         <source>Count loop(&amp;C)</source>
         <translation>回数ループ(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2209"/>
+        <location filename="MainWnd/MainWnd.ui" line="2211"/>
         <source>Rewind 1 sec.(&amp;1)</source>
         <translation>1秒戻る(&amp;1)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2214"/>
+        <location filename="MainWnd/MainWnd.ui" line="2216"/>
         <source>Rewind 2 sec.(&amp;2)</source>
         <translation>2秒戻る(&amp;2)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2219"/>
+        <location filename="MainWnd/MainWnd.ui" line="2221"/>
         <source>Rewind 3 sec.(&amp;3)</source>
         <translation>3秒戻る(&amp;3)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2224"/>
+        <location filename="MainWnd/MainWnd.ui" line="2226"/>
         <source>Rewind 5 sec.(&amp;5)</source>
         <translation>5秒戻る(&amp;5)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2229"/>
+        <location filename="MainWnd/MainWnd.ui" line="2231"/>
         <source>Rewind 10 sec.(&amp;T)</source>
         <translation>10秒戻る(&amp;10)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2234"/>
+        <location filename="MainWnd/MainWnd.ui" line="2236"/>
         <source>Forward 1 sec.(&amp;1)</source>
         <translation>1秒進む(&amp;1)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2239"/>
+        <location filename="MainWnd/MainWnd.ui" line="2241"/>
         <source>Forward 2 sec.(&amp;2)</source>
         <translation>2秒進む(&amp;2)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2244"/>
+        <location filename="MainWnd/MainWnd.ui" line="2246"/>
         <source>Forward 3 sec.(&amp;3)</source>
         <translation>3秒進む(&amp;3)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2249"/>
+        <location filename="MainWnd/MainWnd.ui" line="2251"/>
         <source>Forward 5 sec.(&amp;5)</source>
         <translation>5秒進む(&amp;5)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2254"/>
+        <location filename="MainWnd/MainWnd.ui" line="2256"/>
         <source>Forward 10 sec.(&amp;T)</source>
         <translation>10秒進む(&amp;10)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2262"/>
+        <location filename="MainWnd/MainWnd.ui" line="2264"/>
         <source>Vocal cancel(&amp;V)</source>
         <translation>ボーカルキャンセル(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2270"/>
+        <location filename="MainWnd/MainWnd.ui" line="2272"/>
         <source>Monoral(&amp;M)</source>
         <translation>モノラル(&amp;M)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2278"/>
+        <location filename="MainWnd/MainWnd.ui" line="2280"/>
         <source>Only left(&amp;L)</source>
         <translation>左のみ再生(&amp;L)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2286"/>
+        <location filename="MainWnd/MainWnd.ui" line="2288"/>
         <source>Only right(&amp;R)</source>
         <translation>右のみ再生(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2294"/>
+        <location filename="MainWnd/MainWnd.ui" line="2296"/>
         <source>Change LR(&amp;C)</source>
         <translation>左右入れ替え(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2299"/>
+        <location filename="MainWnd/MainWnd.ui" line="2301"/>
         <source>FLAT(&amp;F)</source>
         <translation>FLAT(&amp;F)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2304"/>
+        <location filename="MainWnd/MainWnd.ui" line="2306"/>
         <source>Boost low(ultra-strong)(&amp;A)</source>
         <translation>低音強調（超最強）(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2309"/>
+        <location filename="MainWnd/MainWnd.ui" line="2311"/>
         <source>Boost low(strongest)(&amp;B)</source>
         <translation>低音強調（最強）(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2314"/>
+        <location filename="MainWnd/MainWnd.ui" line="2316"/>
         <source>Boost low(strong)(&amp;C)</source>
         <translation>低音強調（強）(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2319"/>
+        <location filename="MainWnd/MainWnd.ui" line="2321"/>
         <source>Boost low(middle)(&amp;D)</source>
         <translation>低音強調（中）(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2324"/>
+        <location filename="MainWnd/MainWnd.ui" line="2326"/>
         <source>Boost low(weak)(&amp;E)</source>
         <translation>低音強調（弱）(&amp;E)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2329"/>
+        <location filename="MainWnd/MainWnd.ui" line="2331"/>
         <source>Boost low(weakest)(&amp;G)</source>
         <translation>低音強調（最弱）(&amp;G)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2334"/>
+        <location filename="MainWnd/MainWnd.ui" line="2336"/>
         <source>Boost middle(ultra-strong)(&amp;H)</source>
         <translation>中音強調（超最強）(&amp;H)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2339"/>
+        <location filename="MainWnd/MainWnd.ui" line="2341"/>
         <source>Boost middle(strongest)(&amp;I)</source>
         <translation>中音強調（最強）(&amp;I)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2344"/>
+        <location filename="MainWnd/MainWnd.ui" line="2346"/>
         <source>Boost middle(strong)(&amp;J)</source>
         <translation>中音強調（強）(&amp;J)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2349"/>
+        <location filename="MainWnd/MainWnd.ui" line="2351"/>
         <source>Boost middle(middle)(&amp;K)</source>
         <translation>中音強調（中）(&amp;K)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2354"/>
+        <location filename="MainWnd/MainWnd.ui" line="2356"/>
         <source>Boost middle(weak)(&amp;L)</source>
         <translation>中音強調（弱）(&amp;L)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2359"/>
+        <location filename="MainWnd/MainWnd.ui" line="2361"/>
         <source>Boost middle(weakest)(&amp;M)</source>
         <translation>中音強調（最弱）(&amp;M)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2364"/>
+        <location filename="MainWnd/MainWnd.ui" line="2366"/>
         <source>Boost high(ultra-strong)(&amp;N)</source>
         <translation>高音強調（超最強）(&amp;N)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2369"/>
+        <location filename="MainWnd/MainWnd.ui" line="2371"/>
         <source>Boost high(strongest)(&amp;O)</source>
         <translation>高音強調（最強）(&amp;O)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2374"/>
+        <location filename="MainWnd/MainWnd.ui" line="2376"/>
         <source>Boost high(strong)(&amp;P)</source>
         <translation>高音強調（強）(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2379"/>
+        <location filename="MainWnd/MainWnd.ui" line="2381"/>
         <source>Boost high(middle)(&amp;Q)</source>
         <translation>高音強調（中）(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2384"/>
+        <location filename="MainWnd/MainWnd.ui" line="2386"/>
         <source>Boost high(weak)(&amp;R)</source>
         <translation>高音強調（弱）(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2389"/>
+        <location filename="MainWnd/MainWnd.ui" line="2391"/>
         <source>Boost high(weakest)(&amp;S)</source>
         <translation>高音強調（最弱）(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2394"/>
+        <location filename="MainWnd/MainWnd.ui" line="2396"/>
         <source>Low cut(ultra-strong)(&amp;T)</source>
         <translation>低音カット（超最強）(&amp;T)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2399"/>
+        <location filename="MainWnd/MainWnd.ui" line="2401"/>
         <source>Low cut(strongest)(&amp;U)</source>
         <translation>低音カット（最強）(&amp;U)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2404"/>
+        <location filename="MainWnd/MainWnd.ui" line="2406"/>
         <source>Low cut(strong)(&amp;V)</source>
         <translation>低音カット（強）(&amp;V)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2409"/>
+        <location filename="MainWnd/MainWnd.ui" line="2411"/>
         <source>Low cut(middle)(&amp;W)</source>
         <translation>低音カット（中）(&amp;W)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2414"/>
+        <location filename="MainWnd/MainWnd.ui" line="2416"/>
         <source>Low cut(weak)(&amp;X)</source>
         <translation>低音カット（弱）(&amp;X)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2419"/>
+        <location filename="MainWnd/MainWnd.ui" line="2421"/>
         <source>Low cut(weakest)(&amp;Y)</source>
         <translation>低音カット（最弱）(&amp;Y)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2424"/>
+        <location filename="MainWnd/MainWnd.ui" line="2426"/>
         <source>Middle cut(ultra-strong)(&amp;Z)</source>
         <translation>中音カット（超最強）(&amp;Z)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2429"/>
+        <location filename="MainWnd/MainWnd.ui" line="2431"/>
         <source>Middle cut(strongest)(&amp;0)</source>
         <translation>中音カット（最強）(&amp;0)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2434"/>
+        <location filename="MainWnd/MainWnd.ui" line="2436"/>
         <source>Middle cut(strong)(&amp;1)</source>
         <translation>中音カット（強）(&amp;1)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2439"/>
+        <location filename="MainWnd/MainWnd.ui" line="2441"/>
         <source>Middle cut(middle)(&amp;2)</source>
         <translation>中音カット（中）(&amp;2)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2444"/>
+        <location filename="MainWnd/MainWnd.ui" line="2446"/>
         <source>Middle cut(weak)(&amp;3)</source>
         <translation>中音カット（弱）(&amp;3)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2449"/>
+        <location filename="MainWnd/MainWnd.ui" line="2451"/>
         <source>Middle cut(weakest)(&amp;4)</source>
         <translation>中音カット（最弱）(&amp;4)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2454"/>
+        <location filename="MainWnd/MainWnd.ui" line="2456"/>
         <source>High cut(ultra-strong)(&amp;5)</source>
         <translation>高音カット（超最強）(&amp;5)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2459"/>
+        <location filename="MainWnd/MainWnd.ui" line="2461"/>
         <source>High cut(strongest)(&amp;6)</source>
         <translation>高音カット（最強）(&amp;6)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2464"/>
+        <location filename="MainWnd/MainWnd.ui" line="2466"/>
         <source>High cut(strong)(&amp;7)</source>
         <translation>高音カット（強）(&amp;7)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2469"/>
+        <location filename="MainWnd/MainWnd.ui" line="2471"/>
         <source>High cut(middle)(&amp;8)</source>
         <translation>高音カット（中）(&amp;8)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2474"/>
+        <location filename="MainWnd/MainWnd.ui" line="2476"/>
         <source>High cut(weak)(&amp;9)</source>
         <translation>高音カット（弱）(&amp;9)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2479"/>
+        <location filename="MainWnd/MainWnd.ui" line="2481"/>
         <source>High cut(weakest)(&amp;0)</source>
         <translation>高音カット（最弱）(&amp;0)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2487"/>
+        <location filename="MainWnd/MainWnd.ui" line="2489"/>
         <source>Reverse play(&amp;R)</source>
         <translation>逆回転再生(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2495"/>
+        <location filename="MainWnd/MainWnd.ui" line="2497"/>
         <source>Reverse(&amp;R)</source>
         <translation>逆回転再生(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2503"/>
+        <location filename="MainWnd/MainWnd.ui" line="2505"/>
         <source>Transcribe Bass(&amp;T)</source>
         <translation>ベースの耳コピ(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2511"/>
+        <location filename="MainWnd/MainWnd.ui" line="2513"/>
         <source>Transcribe Drums (Hi-Hat, Cymbals)(&amp;H)</source>
         <translation>ドラム（ハイハット、シンバル）の耳コピ(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2519"/>
+        <location filename="MainWnd/MainWnd.ui" line="2521"/>
         <source>Old Record Play(&amp;F)</source>
         <translation>古びたレコード再生(&amp;F)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2527"/>
+        <location filename="MainWnd/MainWnd.ui" line="2529"/>
         <source>Record Noise(&amp;R)</source>
         <translation>レコードノイズ(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2535"/>
+        <location filename="MainWnd/MainWnd.ui" line="2537"/>
         <source>Low battery(&amp;L)</source>
         <translation>電池切れ(&amp;L)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2543"/>
+        <location filename="MainWnd/MainWnd.ui" line="2545"/>
         <source>No sense(&amp;N)</source>
         <translation>歌へたモード(&amp;N)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2551"/>
+        <location filename="MainWnd/MainWnd.ui" line="2553"/>
         <source>Ear Training(&amp;E)</source>
         <translation>聴覚トレーニング(&amp;E)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2559"/>
+        <location filename="MainWnd/MainWnd.ui" line="2561"/>
         <source>Normalize(&amp;N)</source>
         <translation>ノーマライズ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2567"/>
+        <location filename="MainWnd/MainWnd.ui" line="2569"/>
         <source>Record(&amp;F)</source>
         <translation>古びたレコード再生(&amp;F)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2575"/>
+        <location filename="MainWnd/MainWnd.ui" line="2577"/>
         <source>Wave(&amp;W)</source>
         <translation>波音(&amp;W)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2583"/>
-        <location filename="MainWnd/MainWnd.ui" line="2599"/>
-        <location filename="MainWnd/MainWnd.ui" line="2839"/>
-        <location filename="MainWnd/MainWnd.ui" line="2943"/>
-        <location filename="MainWnd/MainWnd.ui" line="2959"/>
-        <location filename="MainWnd/MainWnd.ui" line="2975"/>
-        <location filename="MainWnd/MainWnd.ui" line="2991"/>
-        <location filename="MainWnd/MainWnd.ui" line="3007"/>
+        <location filename="MainWnd/MainWnd.ui" line="2585"/>
+        <location filename="MainWnd/MainWnd.ui" line="2601"/>
+        <location filename="MainWnd/MainWnd.ui" line="2841"/>
+        <location filename="MainWnd/MainWnd.ui" line="2945"/>
+        <location filename="MainWnd/MainWnd.ui" line="2961"/>
+        <location filename="MainWnd/MainWnd.ui" line="2977"/>
+        <location filename="MainWnd/MainWnd.ui" line="2993"/>
+        <location filename="MainWnd/MainWnd.ui" line="3009"/>
         <source>Default(&amp;D)</source>
         <translation>デフォルト(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2591"/>
-        <location filename="MainWnd/MainWnd.ui" line="2607"/>
-        <location filename="MainWnd/MainWnd.ui" line="2847"/>
-        <location filename="MainWnd/MainWnd.ui" line="2951"/>
-        <location filename="MainWnd/MainWnd.ui" line="2967"/>
-        <location filename="MainWnd/MainWnd.ui" line="2983"/>
-        <location filename="MainWnd/MainWnd.ui" line="2999"/>
-        <location filename="MainWnd/MainWnd.ui" line="3015"/>
+        <location filename="MainWnd/MainWnd.ui" line="2593"/>
+        <location filename="MainWnd/MainWnd.ui" line="2609"/>
+        <location filename="MainWnd/MainWnd.ui" line="2849"/>
+        <location filename="MainWnd/MainWnd.ui" line="2953"/>
+        <location filename="MainWnd/MainWnd.ui" line="2969"/>
+        <location filename="MainWnd/MainWnd.ui" line="2985"/>
+        <location filename="MainWnd/MainWnd.ui" line="3001"/>
+        <location filename="MainWnd/MainWnd.ui" line="3017"/>
         <source>Customize(&amp;C)</source>
         <translation>カスタマイズ(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2615"/>
+        <location filename="MainWnd/MainWnd.ui" line="2617"/>
         <source>Padded Cell(&amp;P)</source>
         <translation>クッション張りの安全室(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2623"/>
+        <location filename="MainWnd/MainWnd.ui" line="2625"/>
         <source>Room(&amp;R)</source>
         <translation>部屋(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2631"/>
+        <location filename="MainWnd/MainWnd.ui" line="2633"/>
         <source>Bathroom(&amp;B)</source>
         <translation>浴室(&amp;B)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2639"/>
+        <location filename="MainWnd/MainWnd.ui" line="2641"/>
         <source>Living Room(&amp;R)</source>
         <translation>リビング(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2647"/>
+        <location filename="MainWnd/MainWnd.ui" line="2649"/>
         <source>Stone Room(&amp;R)</source>
         <translation>石室(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2655"/>
+        <location filename="MainWnd/MainWnd.ui" line="2657"/>
         <source>Auditorium(&amp;R)</source>
         <translation>講堂(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2663"/>
+        <location filename="MainWnd/MainWnd.ui" line="2665"/>
         <source>Concert Hall(&amp;R)</source>
         <translation>コンサートホール(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2671"/>
+        <location filename="MainWnd/MainWnd.ui" line="2673"/>
         <source>Cave(&amp;R)</source>
         <translation>洞窟(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2679"/>
+        <location filename="MainWnd/MainWnd.ui" line="2681"/>
         <source>Arena(&amp;R)</source>
         <translation>アリーナ(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2687"/>
+        <location filename="MainWnd/MainWnd.ui" line="2689"/>
         <source>Hangar(&amp;R)</source>
         <translation>納屋(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2695"/>
+        <location filename="MainWnd/MainWnd.ui" line="2697"/>
         <source>Carpeted Hallway(&amp;R)</source>
         <translation>カーペットを敷いた廊下(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2703"/>
+        <location filename="MainWnd/MainWnd.ui" line="2705"/>
         <source>Hallway(&amp;R)</source>
         <translation>廊下(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2711"/>
+        <location filename="MainWnd/MainWnd.ui" line="2713"/>
         <source>Stone Corridor(&amp;R)</source>
         <translation>石の廊下(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2719"/>
+        <location filename="MainWnd/MainWnd.ui" line="2721"/>
         <source>Alley(&amp;R)</source>
         <translation>裏通り(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2727"/>
+        <location filename="MainWnd/MainWnd.ui" line="2729"/>
         <source>Forest(&amp;R)</source>
         <translation>森林(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2735"/>
+        <location filename="MainWnd/MainWnd.ui" line="2737"/>
         <source>City(&amp;R)</source>
         <translation>都市(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2743"/>
+        <location filename="MainWnd/MainWnd.ui" line="2745"/>
         <source>Mountains(&amp;R)</source>
         <translation>山(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2751"/>
+        <location filename="MainWnd/MainWnd.ui" line="2753"/>
         <source>Quarry(&amp;R)</source>
         <translation>採石場(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2759"/>
+        <location filename="MainWnd/MainWnd.ui" line="2761"/>
         <source>Plain(&amp;R)</source>
         <translation>平野(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2767"/>
+        <location filename="MainWnd/MainWnd.ui" line="2769"/>
         <source>Parking Lot(&amp;R)</source>
         <translation>駐車場(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2775"/>
+        <location filename="MainWnd/MainWnd.ui" line="2777"/>
         <source>Sewer Pipe(&amp;R)</source>
         <translation>下水管(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2783"/>
+        <location filename="MainWnd/MainWnd.ui" line="2785"/>
         <source>Underwater(&amp;R)</source>
         <translation>水中(&amp;R)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2791"/>
+        <location filename="MainWnd/MainWnd.ui" line="2793"/>
         <source>Small Room(&amp;S)</source>
         <translation>小部屋(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2799"/>
+        <location filename="MainWnd/MainWnd.ui" line="2801"/>
         <source>Medium Room(&amp;M)</source>
         <translation>中部屋(&amp;M)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2807"/>
+        <location filename="MainWnd/MainWnd.ui" line="2809"/>
         <source>Large Room(&amp;L)</source>
         <translation>大部屋(&amp;L)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2815"/>
+        <location filename="MainWnd/MainWnd.ui" line="2817"/>
         <source>Medium Hall(&amp;M)</source>
         <translation>中ホール(&amp;M)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2823"/>
+        <location filename="MainWnd/MainWnd.ui" line="2825"/>
         <source>Large Hall(&amp;L)</source>
         <translation>大ホール(&amp;L)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2831"/>
+        <location filename="MainWnd/MainWnd.ui" line="2833"/>
         <source>Plate(&amp;P)</source>
         <translation>プレート(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2855"/>
+        <location filename="MainWnd/MainWnd.ui" line="2857"/>
         <source>Short Echo(&amp;D)</source>
         <translation>短いエコー(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2863"/>
+        <location filename="MainWnd/MainWnd.ui" line="2865"/>
         <source>Medium Echo(&amp;D)</source>
         <translation>中ぐらいのエコー(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2871"/>
+        <location filename="MainWnd/MainWnd.ui" line="2873"/>
         <source>Long Echo(&amp;D)</source>
         <translation>長いエコー(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2879"/>
+        <location filename="MainWnd/MainWnd.ui" line="2881"/>
         <source>Stereo Short Echo(&amp;D)</source>
         <translation>ステレオの短いエコー(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2887"/>
+        <location filename="MainWnd/MainWnd.ui" line="2889"/>
         <source>Stereo Medium Echo(&amp;D)</source>
         <translation>ステレオの中ぐらいのエコー(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2895"/>
+        <location filename="MainWnd/MainWnd.ui" line="2897"/>
         <source>Stereo Long Echo(&amp;D)</source>
         <translation>ステレオの長いエコー(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2903"/>
+        <location filename="MainWnd/MainWnd.ui" line="2905"/>
         <source>Mountain Echo(&amp;D)</source>
         <translation>山びこ(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2911"/>
+        <location filename="MainWnd/MainWnd.ui" line="2913"/>
         <source>Big Echo(&amp;D)</source>
         <translation>大きいエコー(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2919"/>
+        <location filename="MainWnd/MainWnd.ui" line="2921"/>
         <source>Stereo Big Echo(&amp;D)</source>
         <translation>ステレオの大きいエコー(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2927"/>
+        <location filename="MainWnd/MainWnd.ui" line="2929"/>
         <source>Doubling(&amp;D)</source>
         <translation>ダブリング(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="2935"/>
+        <location filename="MainWnd/MainWnd.ui" line="2937"/>
         <source>Double Kick(&amp;D)</source>
         <translation>ダブルキック(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3020"/>
+        <location filename="MainWnd/MainWnd.ui" line="3022"/>
         <source>Reset all(&amp;R)</source>
         <translation>全てデフォルトに戻す(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3028"/>
+        <location filename="MainWnd/MainWnd.ui" line="3030"/>
         <source>Fade out stop(&amp;F)</source>
         <translation>再生停止時にフェードアウト(&amp;F)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3036"/>
-        <location filename="MainWnd/MainWnd.ui" line="3124"/>
+        <location filename="MainWnd/MainWnd.ui" line="3038"/>
+        <location filename="MainWnd/MainWnd.ui" line="3126"/>
         <source>1 sec(&amp;1)</source>
         <translation>1秒(&amp;1)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3044"/>
-        <location filename="MainWnd/MainWnd.ui" line="3132"/>
+        <location filename="MainWnd/MainWnd.ui" line="3046"/>
+        <location filename="MainWnd/MainWnd.ui" line="3134"/>
         <source>2 sec(&amp;2)</source>
         <translation>2秒(&amp;2)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3052"/>
-        <location filename="MainWnd/MainWnd.ui" line="3140"/>
+        <location filename="MainWnd/MainWnd.ui" line="3054"/>
+        <location filename="MainWnd/MainWnd.ui" line="3142"/>
         <source>3 sec(&amp;3)</source>
         <translation>3秒(&amp;3)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3060"/>
-        <location filename="MainWnd/MainWnd.ui" line="3148"/>
+        <location filename="MainWnd/MainWnd.ui" line="3062"/>
+        <location filename="MainWnd/MainWnd.ui" line="3150"/>
         <source>4 sec(&amp;4)</source>
         <translation>4秒(&amp;4)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3068"/>
-        <location filename="MainWnd/MainWnd.ui" line="3156"/>
+        <location filename="MainWnd/MainWnd.ui" line="3070"/>
+        <location filename="MainWnd/MainWnd.ui" line="3158"/>
         <source>5 sec(&amp;5)</source>
         <translation>5秒(&amp;5)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3076"/>
-        <location filename="MainWnd/MainWnd.ui" line="3164"/>
+        <location filename="MainWnd/MainWnd.ui" line="3078"/>
+        <location filename="MainWnd/MainWnd.ui" line="3166"/>
         <source>6 sec(&amp;6)</source>
         <translation>6秒(&amp;6)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3084"/>
-        <location filename="MainWnd/MainWnd.ui" line="3172"/>
+        <location filename="MainWnd/MainWnd.ui" line="3086"/>
+        <location filename="MainWnd/MainWnd.ui" line="3174"/>
         <source>7 sec(&amp;7)</source>
         <translation>7秒(&amp;7)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3092"/>
-        <location filename="MainWnd/MainWnd.ui" line="3180"/>
+        <location filename="MainWnd/MainWnd.ui" line="3094"/>
+        <location filename="MainWnd/MainWnd.ui" line="3182"/>
         <source>8 sec(&amp;8)</source>
         <translation>8秒(&amp;8)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3100"/>
-        <location filename="MainWnd/MainWnd.ui" line="3188"/>
+        <location filename="MainWnd/MainWnd.ui" line="3102"/>
+        <location filename="MainWnd/MainWnd.ui" line="3190"/>
         <source>9 sec(&amp;9)</source>
         <translation>9秒(&amp;9)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3108"/>
-        <location filename="MainWnd/MainWnd.ui" line="3196"/>
+        <location filename="MainWnd/MainWnd.ui" line="3110"/>
+        <location filename="MainWnd/MainWnd.ui" line="3198"/>
         <source>10 sec(&amp;A)</source>
         <translation>10秒(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3116"/>
+        <location filename="MainWnd/MainWnd.ui" line="3118"/>
         <source>Fade out next(&amp;F)</source>
         <translation>切替時フェードアウト時間(&amp;H)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3204"/>
+        <location filename="MainWnd/MainWnd.ui" line="3206"/>
         <source>Add current settings(&amp;A)</source>
         <translation>現在の設定を追加(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3212"/>
+        <location filename="MainWnd/MainWnd.ui" line="3214"/>
         <source>Delete selected preset(&amp;D)</source>
         <translation>選択中のプリセットを削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3217"/>
+        <location filename="MainWnd/MainWnd.ui" line="3219"/>
         <source>Open(&amp;O)...</source>
         <translation>開く(&amp;O)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3225"/>
+        <location filename="MainWnd/MainWnd.ui" line="3227"/>
         <source>Save(&amp;S)...</source>
         <translation>保存(&amp;S)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3230"/>
+        <location filename="MainWnd/MainWnd.ui" line="3232"/>
         <source>Add(&amp;P)...</source>
         <translation>追加(&amp;P)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3238"/>
+        <location filename="MainWnd/MainWnd.ui" line="3240"/>
         <source>Tab(&amp;T)</source>
         <translation>タブ(&amp;T)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3246"/>
+        <location filename="MainWnd/MainWnd.ui" line="3248"/>
         <source>Play Range(&amp;R)...</source>
         <translation>再生範囲(&amp;R)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3251"/>
+        <location filename="MainWnd/MainWnd.ui" line="3253"/>
         <source>Play Position(&amp;P)...</source>
         <oldsource>Play position(&amp;P)...</oldsource>
         <translation>再生位置(&amp;P)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3259"/>
+        <location filename="MainWnd/MainWnd.ui" line="3261"/>
         <source>Decrease(&amp;D)...</source>
         <translation>だんだん遅くする(&amp;D)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3267"/>
+        <location filename="MainWnd/MainWnd.ui" line="3269"/>
         <source>Increase(&amp;D)...</source>
         <translation>だんだん速くする(&amp;D)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3275"/>
+        <location filename="MainWnd/MainWnd.ui" line="3277"/>
         <source>Decrease(&amp;F)...</source>
         <translation>だんだん遅くする(&amp;F)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3283"/>
+        <location filename="MainWnd/MainWnd.ui" line="3285"/>
         <source>Increase(&amp;F)...</source>
         <translation>だんだん速くする(&amp;F)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3288"/>
+        <location filename="MainWnd/MainWnd.ui" line="3290"/>
         <source>Open Directory(&amp;F)...</source>
         <translation>フォルダを開く(&amp;F)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3293"/>
+        <location filename="MainWnd/MainWnd.ui" line="3295"/>
         <source>Add Directory(&amp;G)...</source>
         <translation>フォルダを追加(&amp;G)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3301"/>
-        <location filename="MainWnd/MainWnd.ui" line="3309"/>
+        <location filename="MainWnd/MainWnd.ui" line="3303"/>
+        <location filename="MainWnd/MainWnd.ui" line="3311"/>
         <source>Position slider(&amp;T)</source>
         <oldsource>Position slider</oldsource>
         <translation>再生位置スライダ(&amp;T)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3314"/>
+        <location filename="MainWnd/MainWnd.ui" line="3316"/>
         <source>Select all(&amp;A)</source>
         <translation>すべて選択(&amp;A)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3317"/>
+        <location filename="MainWnd/MainWnd.ui" line="3319"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3322"/>
+        <location filename="MainWnd/MainWnd.ui" line="3324"/>
         <source>Delete(&amp;D)</source>
         <translation>削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3330"/>
+        <location filename="MainWnd/MainWnd.ui" line="3332"/>
         <source>Timer setting(&amp;T)...</source>
         <translation>タイマー設定(&amp;T)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3335"/>
+        <location filename="MainWnd/MainWnd.ui" line="3337"/>
         <source>Min/Max setting(&amp;L)...</source>
         <translation>最大値／最小値の設定(&amp;L)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3340"/>
+        <location filename="MainWnd/MainWnd.ui" line="3342"/>
         <source>Open URL(&amp;O)...</source>
         <translation>URLを開く(&amp;O)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3345"/>
+        <location filename="MainWnd/MainWnd.ui" line="3347"/>
         <source>Add URL(&amp;A)...</source>
         <translation>URLを追加(&amp;A)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3353"/>
-        <location filename="MainWnd/MainWnd.ui" line="3471"/>
-        <location filename="MainWnd/MainWnd.ui" line="3479"/>
+        <location filename="MainWnd/MainWnd.ui" line="3355"/>
+        <location filename="MainWnd/MainWnd.ui" line="3473"/>
+        <location filename="MainWnd/MainWnd.ui" line="3481"/>
         <source>Playlist(&amp;P)</source>
         <translation>再生リスト(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3358"/>
-        <location filename="MainWnd/MainWnd.ui" line="3366"/>
+        <location filename="MainWnd/MainWnd.ui" line="3360"/>
+        <location filename="MainWnd/MainWnd.ui" line="3368"/>
         <source>Play Position(&amp;P)</source>
         <translation>再生位置(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3374"/>
+        <location filename="MainWnd/MainWnd.ui" line="3376"/>
         <source>Window position(&amp;P)</source>
         <translation>ウィンドウ位置(&amp;P)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3382"/>
+        <location filename="MainWnd/MainWnd.ui" line="3384"/>
         <source>Window size(&amp;S)</source>
         <translation>ウィンドウサイズ(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3387"/>
+        <location filename="MainWnd/MainWnd.ui" line="3389"/>
         <source>Exit(&amp;X)</source>
         <translation>終了(&amp;X)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3390"/>
+        <location filename="MainWnd/MainWnd.ui" line="3392"/>
         <source>Alt+F4</source>
         <translation>Alt+F4</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3398"/>
+        <location filename="MainWnd/MainWnd.ui" line="3400"/>
         <source>Save all(&amp;A)...</source>
         <translation>一括変換(&amp;A)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3406"/>
+        <location filename="MainWnd/MainWnd.ui" line="3408"/>
         <source>Explorer(&amp;E)</source>
         <translation>エクスプローラ(&amp;E)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3411"/>
+        <location filename="MainWnd/MainWnd.ui" line="3413"/>
         <source>Copy current position to clipboard(&amp;C)</source>
         <translation>現在の再生位置をクリップボードにコピー(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3416"/>
+        <location filename="MainWnd/MainWnd.ui" line="3418"/>
         <source>Metronome(&amp;M)...</source>
         <translation>メトロノーム機能(&amp;M)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3424"/>
+        <location filename="MainWnd/MainWnd.ui" line="3426"/>
         <source>Bring window top(&amp;S)</source>
         <translation>最前面表示(&amp;S)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3429"/>
+        <location filename="MainWnd/MainWnd.ui" line="3431"/>
         <source>Version(&amp;A)...</source>
         <translation>バージョン情報(&amp;A)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3437"/>
+        <location filename="MainWnd/MainWnd.ui" line="3439"/>
         <source>Default</source>
         <translation>デフォルト</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3445"/>
+        <location filename="MainWnd/MainWnd.ui" line="3447"/>
         <source>Japanese</source>
         <translation>日本語</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3453"/>
+        <location filename="MainWnd/MainWnd.ui" line="3455"/>
         <source>English</source>
         <translation>英語</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3458"/>
+        <location filename="MainWnd/MainWnd.ui" line="3460"/>
         <source>Manual(&amp;M)...</source>
         <translation>オンラインマニュアル(&amp;M)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3463"/>
+        <location filename="MainWnd/MainWnd.ui" line="3465"/>
         <source>Update Check(&amp;U)...</source>
         <translation>アップデートの確認(&amp;U)...</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3484"/>
+        <location filename="MainWnd/MainWnd.ui" line="3486"/>
         <source>Close all(&amp;C)</source>
         <translation>全てのコントロールを閉じる(&amp;C)</translation>
     </message>
     <message>
-        <location filename="MainWnd/MainWnd.ui" line="3489"/>
+        <location filename="MainWnd/MainWnd.ui" line="3491"/>
         <source>Preferences...</source>
         <oldsource>Preferences..</oldsource>
         <translation>詳細設定...</translation>
+    </message>
+    <message>
+        <location filename="MainWnd/MainWnd.ui" line="3499"/>
+        <source>LAME Command Line Option(&amp;L)...</source>
+        <translation>LAMEコマンドラインオプション(&amp;L)...</translation>
     </message>
 </context>
 <context>
@@ -2629,7 +2661,13 @@ Do you want to access the official site?</source>
         <translation>コントロールの間隔を設定する。</translation>
     </message>
     <message>
-        <location filename="MainWnd/PreferencesWnd.ui" line="89"/>
+        <location filename="MainWnd/PreferencesWnd.ui" line="72"/>
+        <location filename="MainWnd/PreferencesWnd.ui" line="117"/>
+        <source>LAME path</source>
+        <translation>LAMEのパス</translation>
+    </message>
+    <message>
+        <location filename="MainWnd/PreferencesWnd.ui" line="179"/>
         <source>*. The setting will be applied after restart.</source>
         <translation>* 設定は再起動後に有効になります。</translation>
     </message>
@@ -2677,20 +2715,26 @@ Application exit.</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="MainWnd/Sound.cpp" line="1422"/>
-        <location filename="MainWnd/Sound.cpp" line="1432"/>
+        <location filename="MainWnd/Sound.cpp" line="1423"/>
+        <location filename="MainWnd/Sound.cpp" line="1433"/>
         <source>Save file</source>
         <translation>名前を付けて保存</translation>
     </message>
     <message>
-        <location filename="MainWnd/Sound.cpp" line="1423"/>
         <source>To save MP3 file, lame.exe is required.
 Put lame.exe in the same directory as hayaemon.exe.</source>
-        <translation>MP3形式での保存には、LAME.EXEが必要です。
+        <translation type="vanished">MP3形式での保存には、LAME.EXEが必要です。
 Hayaemon.exeと同じディレクトリにLAME.EXEを置いて下さい。</translation>
     </message>
     <message>
-        <location filename="MainWnd/Sound.cpp" line="1433"/>
+        <location filename="MainWnd/Sound.cpp" line="1424"/>
+        <source>To save MP3 file, lame.exe is required.
+Select lame executable in the Preferences dialog.</source>
+        <translation>MP3形式での保存には、LAME.EXEが必要です。
+詳細設定ダイアログでLAMEの実行ファイルのパスを設定してください。</translation>
+    </message>
+    <message>
+        <location filename="MainWnd/Sound.cpp" line="1434"/>
         <source>To save Ogg Vorbis file, oggenc2.exe is required.
 Put oggenc2.exe in the same directory as hayaemon.exe.</source>
         <oldsource>To save Ogg Vorbis file, oggenc.exe is required.
@@ -2699,7 +2743,7 @@ Put oggenc.exe in the same directory as hayaemon.exe.</oldsource>
 Hayaemon.exeと同じディレクトリにoggenc2.exeを置いて下さい。</translation>
     </message>
     <message>
-        <location filename="MainWnd/Sound.cpp" line="1521"/>
+        <location filename="MainWnd/Sound.cpp" line="1522"/>
         <source>Saving - </source>
         <translation>保存中 - </translation>
     </message>

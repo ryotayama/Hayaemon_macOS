@@ -388,6 +388,13 @@ void CMenu_MainWnd::OnSaveAllFileMenuSelected()
 	m_rMainWnd.ShowSaveAllFileDialog();
 }
 //----------------------------------------------------------------------------
+// ファイル → LAMEコマンドラインオプションメニューが選択された
+//----------------------------------------------------------------------------
+void CMenu_MainWnd::OnLAMECommandLineMenuSelected()
+{
+	m_rMainWnd.ShowLAMECommandLineWnd();
+}
+//----------------------------------------------------------------------------
 // ファイル → 終了メニューが選択された
 //----------------------------------------------------------------------------
 void CMenu_MainWnd::OnExitMenuSelected()
@@ -2984,6 +2991,7 @@ void CMenu_MainWnd::CreateActionMap()
 	m_actionMap = std::unordered_map<UINT, QAction*>{
 		{ID_SAVEFILE, m_rMainWnd.actionFileSave},
 		{ID_SAVEALLFILE, m_rMainWnd.actionFileSaveAll},
+		{ID_LAMECOMMANDLINE, m_rMainWnd.actionLAMECommandLineOption},
 		{ID_TIMESLIDER, m_rMainWnd.actionTimeSliderVisible},
 		{ID_EXPLORER, m_rMainWnd.actionExplorerVisible},
 		{ID_SPEED, m_rMainWnd.actionSpeedVisible},
@@ -3239,6 +3247,8 @@ void CMenu_MainWnd::CreateConnections()
 					this, &CMenu_MainWnd::OnSaveFileMenuSelected);
 	connect(m_rMainWnd.actionFileSaveAll, &QAction::triggered,
 					this, &CMenu_MainWnd::OnSaveAllFileMenuSelected);
+	connect(m_rMainWnd.actionLAMECommandLineOption, &QAction::triggered,
+					this, &CMenu_MainWnd::OnLAMECommandLineMenuSelected);
 	connect(m_rMainWnd.actionFileExit, &QAction::triggered,
 					this, &CMenu_MainWnd::OnExitMenuSelected);
 	// Edit

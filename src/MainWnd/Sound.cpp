@@ -1415,17 +1415,18 @@ void CSound::SaveFile(LPCTSTR lpszFilePath, int nFormat)
 	// nFormat : 0 ( WAVE ), 1 ( MP3 ), 2 ( OGG )
 
 	if(GetCurFileName() == _T("")) return;
-#ifdef _WIN32
 	if(nFormat == 1) { // MP3
-		QString strLamePath = m_rApp.GetFilePath() + "lame.exe";
+		QString strLamePath = ToQString(m_rMainWnd.GetStrLAMEPath());
+		QFileInfo fi(strLamePath);
 		if(!QFileInfo(strLamePath).exists()) {
 			QMessageBox::information(&m_rMainWnd, QObject::tr("Save file"),
 					   QObject::tr(
 					      "To save MP3 file, lame.exe is required.\n"
-					      "Put lame.exe in the same directory as hayaemon.exe."));
+					      "Select lame executable in the Preferences dialog."));
 			return;
 		}
 	}
+#ifdef _WIN32
 	else if(nFormat == 2) { // OGG
 		QString strLamePath = m_rApp.GetFilePath() + "oggenc2.exe";
 		if(!QFileInfo(strLamePath).exists()) {
@@ -1470,10 +1471,9 @@ void CSound::SaveFile(LPCTSTR lpszFilePath, int nFormat)
 								 BASS_ENCODE_AUTOFREE | BASS_IF_UNICODE, NULL,
 								 0);
 	}
-#ifdef _WIN32
 	else if(nFormat == 1) { // MP3
-		tstring strCmdLine = ToTstring(m_rApp.GetFilePath());
-		strCmdLine += _T("lame ");
+		tstring strCmdLine = m_rMainWnd.GetStrLAMEPath();
+		strCmdLine += _T(" ");
 		strCmdLine += m_rMainWnd.GetStrLAMECommandLine();
 		strCmdLine += _T(" - \"");
 		strCmdLine += lpszFilePath;
@@ -1487,6 +1487,7 @@ void CSound::SaveFile(LPCTSTR lpszFilePath, int nFormat)
 								 BASS_ENCODE_FP_16BIT | BASS_ENCODE_AUTOFREE |
 								 BASS_IF_UNICODE, NULL, 0);
 	}
+#ifdef _WIN32
 	else if(nFormat == 2) { // OGG
 		tstring strCmdLine = ToTstring(m_rApp.GetFilePath());
 		strCmdLine += _T("oggenc2 -o \"");

@@ -93,6 +93,8 @@ set(SRC_MAINWND
   ${SRC_DIR}/MainWnd/FreqLabel_MainWnd.h
   ${SRC_DIR}/MainWnd/FreqSlider_MainWnd.cpp
   ${SRC_DIR}/MainWnd/FreqSlider_MainWnd.h
+  ${SRC_DIR}/MainWnd/LAMECommandLineWnd.cpp
+  ${SRC_DIR}/MainWnd/LAMECommandLineWnd.h
   ${SRC_DIR}/MainWnd/M3UFile.cpp
   ${SRC_DIR}/MainWnd/M3UFile.h
   ${SRC_DIR}/MainWnd/MainWnd.cpp
@@ -229,6 +231,7 @@ qt5_wrap_ui(UI_MOC
   ${SRC_DIR}/MainWnd/DistortionCustomizeWnd.ui
   ${SRC_DIR}/MainWnd/FlangerCustomizeWnd.ui
   ${SRC_DIR}/MainWnd/GargleCustomizeWnd.ui
+  ${SRC_DIR}/MainWnd/LAMECommandLineWnd.ui
   ${SRC_DIR}/MainWnd/MainWnd.ui
   ${SRC_DIR}/MainWnd/OpenURLWnd.ui
   ${SRC_DIR}/MainWnd/PlayPositionWnd.ui

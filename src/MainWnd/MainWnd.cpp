@@ -45,6 +45,7 @@
 #include "FreqLabel_MainWnd.h"
 #include "FreqSlider_MainWnd.h"
 #include "GargleCustomizeWnd.h"
+#include "LAMECommandLineWnd.h"
 #include "M3UFile.h"
 #include "MainWnd_inline.h"
 #include "Menu_MainWnd.h"
@@ -182,6 +183,7 @@ CMainWnd::CMainWnd(CApp & app)
 		m_bManualControlSpacing(kDefaultManualControlSpacing),
 		m_controlSpacing(kDefaultControlSpacing)
 {
+	m_strLAMEPath = GetStrLAMEPathDefault();
 }
 //----------------------------------------------------------------------------
 // デストラクタ
@@ -2431,6 +2433,12 @@ void CMainWnd::OpenInitFileAfterShow()
 	int _bNormalize = _ttoi(buf);
 
 	// その他の設定
+	GetPrivateProfileString(_T("Options"), _T("LAMECommandLine"),
+		_T("--preset cbr 192"), buf, 255, initFilePath.c_str());
+	m_strLAMECommandLine = buf;
+	GetPrivateProfileString(_T("Options"), _T("LAMEPath"),
+		GetStrLAMEPathDefault().c_str(), buf, 255, initFilePath.c_str());
+	m_strLAMEPath = buf;
 	GetPrivateProfileString(_T("Options"), _T("TopMost"), _T("0"), buf, 255, 
 		initFilePath.c_str());
 	int _bTopMost = _ttoi(buf);
@@ -6593,6 +6601,13 @@ void CMainWnd::SetDistortion(BOOL bDistortion)
 	m_sound->SetDistortion(bDistortion);
 }
 //----------------------------------------------------------------------------
+// LAMEコマンドラインオプションの設定
+//----------------------------------------------------------------------------
+void CMainWnd::SetLAMECommandLine(tstring strLAMECommandLine)
+{
+	m_strLAMECommandLine = strLAMECommandLine;
+}
+//----------------------------------------------------------------------------
 // 電池切れ
 //----------------------------------------------------------------------------
 void CMainWnd::SetLowBattery()
@@ -7125,6 +7140,14 @@ void CMainWnd::ShowGargleCustomizeWnd()
 	dlg.exec();
 }
 //----------------------------------------------------------------------------
+// LAMEコマンドラインオプション設定用ウィンドウの表示
+//----------------------------------------------------------------------------
+void CMainWnd::ShowLAMECommandLineWnd()
+{
+	CLAMECommandLineWnd dlg(*this);
+	dlg.exec();
+}
+//----------------------------------------------------------------------------
 // URLを開くウィンドウの表示
 //----------------------------------------------------------------------------
 void CMainWnd::ShowOpenURLWnd(BOOL bAdd)
@@ -7248,6 +7271,8 @@ void CMainWnd::ShowSaveFileDialog()
 	QString filters = filter_wav + ";;" +
 #ifdef _WIN32
 										filter_mp3 + ";;" + filter_ogg + ";;" + 
+#elif __APPLE__
+										filter_mp3 + ";;" + 
 #endif
 										filter_ini + ";;" +
 										filter_m3u_a + ";;" + filter_m3u_r + ";;" +
@@ -7333,11 +7358,10 @@ void CMainWnd::ShowSaveAllFileDialog()
 		int nFormat = wnd.GetFormat();
 
 		if(nFormat == 1) { // MP3
-			QString strLamePath = m_rApp.GetFilePath() + "lame.exe";
-			if(!QFileInfo(strLamePath).exists()) {
+			if(!QFileInfo(ToQString(m_strLAMEPath)).exists()) {
 				QMessageBox::information(this, tr("Save file"),
 					tr("To save MP3 file, lame.exe is required.\n"
-						 "Put lame.exe in the same directory as hayaemon.exe."));
+						 "Select lame executable in the Preferences dialog."));
 				return;
 			}
 		}
@@ -7381,7 +7405,7 @@ void CMainWnd::ShowSaveAllFileDialog()
 					str2 += strFormat;
 				}
 				while(QFileInfo(str2).exists());
-				str += QString("(%1)").arg(n);
+				str += QString("(%1)").arg(n - 1);
 				str += strFormat;
 			}
 
@@ -7798,6 +7822,10 @@ void CMainWnd::WriteInitFile()
 		initFilePath.c_str());
 
 	// その他の設定
+	WritePrivateProfileString(_T("Options"), _T("LAMECommandLine"),
+		m_strLAMECommandLine.c_str(), initFilePath.c_str());
+	WritePrivateProfileString(_T("Options"), _T("LAMEPath"),
+		m_strLAMEPath.c_str(), initFilePath.c_str());
 	_stprintf_s(buf, _T("%d"), m_menu->IsItemChecked(ID_RECOVERSPEED) ? 1 : 0);
 	WritePrivateProfileString(_T("Options"), _T("RecoverSpeed"), buf, 
 		initFilePath.c_str());
@@ -8155,6 +8183,8 @@ void CMainWnd::SetPreferences()
 	auto oldControlSpacing = m_controlSpacing;
 	wnd.control_spacing_checkbox_->setChecked(m_bManualControlSpacing);
 	wnd.control_spacing_spinbox_->setValue(m_controlSpacing);
+	auto oldLAMEPath = m_strLAMEPath;
+	wnd.lame_path_edit_->setText(ToQString(m_strLAMEPath));
 	
 	if (wnd.exec() != QDialog::Accepted) {
 		return;
@@ -8168,6 +8198,10 @@ void CMainWnd::SetPreferences()
 		m_bManualControlSpacing = bManualControlSpacing;
 		m_controlSpacing = controlSpacing;
 		UpdateLayout();
+	}
+	auto LAMEPath = ToTstring(wnd.lame_path_edit_->text());
+	if (oldLAMEPath != LAMEPath) {
+		m_strLAMEPath = LAMEPath;
 	}
 }
 //----------------------------------------------------------------------------
@@ -8623,6 +8657,19 @@ void CMainWnd::UpdateTimeThreadProc(void * pParam)
 		pMainWnd->ShowTime(FALSE);
 		std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 	}
+}
+//----------------------------------------------------------------------------
+// lameのパスを取得する
+//----------------------------------------------------------------------------
+tstring CMainWnd::GetStrLAMEPathDefault() const
+{
+	QString path = m_rApp.GetFilePath() + QDir::separator();
+#if _WIN32
+	path = QDir::cleanPath(path + "lame.exe");
+#else
+	path = QDir::cleanPath(path + "lame");
+#endif
+	return ToTstring(QDir::toNativeSeparators(path));
 }
 //----------------------------------------------------------------------------
 // タイマーを停止
