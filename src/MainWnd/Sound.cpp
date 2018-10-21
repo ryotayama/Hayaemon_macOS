@@ -1461,15 +1461,22 @@ void CSound::SaveFile(LPCTSTR lpszFilePath, int nFormat)
 
 	BOOL bRet;
 	if(nFormat == 0) { // WAVE
-#ifdef UNICODE
-		auto strCmdLine = QString::fromStdWString(lpszFilePath).toStdU16String();
+#ifdef __APPLE__
+		auto strCmdLine = QString::fromStdWString(lpszFilePath).toUtf8();
+		bRet = BASS_Encode_Start(m_hStream, strCmdLine.data(),
+								 BASS_ENCODE_PCM | BASS_ENCODE_FP_16BIT |
+								 BASS_ENCODE_AUTOFREE, NULL, 0);
 #else
+#	ifdef UNICODE
+		auto strCmdLine = QString::fromStdWString(lpszFilePath).toStdU16String();
+#	else
 		auto strCmdLine = std::string(lpszFilePath);
-#endif
+#	endif
 		bRet = BASS_Encode_Start(m_hStream, (char*)strCmdLine.c_str(),
 								 BASS_ENCODE_PCM | BASS_ENCODE_FP_16BIT |
 								 BASS_ENCODE_AUTOFREE | BASS_IF_UNICODE, NULL,
 								 0);
+#endif
 	}
 	else if(nFormat == 1) { // MP3
 		tstring strCmdLine = m_rMainWnd.GetStrLAMEPath();
@@ -1478,14 +1485,20 @@ void CSound::SaveFile(LPCTSTR lpszFilePath, int nFormat)
 		strCmdLine += _T(" - \"");
 		strCmdLine += lpszFilePath;
 		strCmdLine += _T("\"");
-#ifdef UNICODE
-		auto cmdLine = ToQString(strCmdLine).toStdU16String();
+#ifdef __APPLE__
+		auto cmdLine = ToQString(strCmdLine).toUtf8();
+		bRet = BASS_Encode_Start(m_hStream, cmdLine.data(),
+								 BASS_ENCODE_FP_16BIT | BASS_ENCODE_AUTOFREE, NULL, 0);
 #else
+#	ifdef UNICODE
+		auto cmdLine = ToQString(strCmdLine).toStdU16String();
+#	else
 		auto cmdLine = strCmdLine;
-#endif
+#	endif
 		bRet = BASS_Encode_Start(m_hStream, (char*)cmdLine.c_str(),
 								 BASS_ENCODE_FP_16BIT | BASS_ENCODE_AUTOFREE |
 								 BASS_IF_UNICODE, NULL, 0);
+#endif
 	}
 #ifdef _WIN32
 	else if(nFormat == 2) { // OGG
