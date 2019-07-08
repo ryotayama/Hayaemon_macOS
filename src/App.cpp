@@ -52,9 +52,10 @@ int CApp::Run(int argc, char *argv[])
 	m_strPath = QDir::toNativeSeparators(m_strPath);
 
 	// 翻訳のインストール
+	tstring initFilePath = GetSettingFilePath();
 	TCHAR lang[255];
 	GetPrivateProfileString(_T("Options"), _T("Language"), _T(""), lang, 255,
-													ToTstring(m_strPath + "Setting.ini").c_str());
+							initFilePath.c_str());
 	if (lstrcmp(lang, _T("")) == 0) {
 		QString loc = QLocale::system().name();
 		loc.truncate(loc.lastIndexOf('_'));
