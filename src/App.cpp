@@ -74,8 +74,8 @@ int CApp::Run(int argc, char *argv[])
 	m_cstrVersionInfo = u8"0.01β4";
 	m_cstrAuthorName = QObject::tr("Ryota");
 	m_cstrAuthorEMail = "ryota.yamauch@gmail.com";
-	m_cstrAuthorWebSiteName = QObject::tr("Free Software Development Station");
-	m_cstrAuthorURL = "http://soft.edolfzoku.com/";
+	m_cstrAuthorWebSiteName = QObject::tr("Hayaemon Official Website");
+	m_cstrAuthorURL = "http://hayaemon.jp";
 
 	CMainWnd mainWnd(*this);
 	m_wnd = &mainWnd;
