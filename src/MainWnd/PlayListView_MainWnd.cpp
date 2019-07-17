@@ -1,4 +1,4 @@
-﻿//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 // PlayListView_MainWnd.cpp : 速度表示用ラベルの管理を行う
 //----------------------------------------------------------------------------
 #include "PlayListView_MainWnd.h"
@@ -36,6 +36,7 @@ CPlayListView_MainWnd::CPlayListView_MainWnd(CMainWnd & mainWnd,
 					this, &CPlayListView_MainWnd::OnLButtonDoubleClick);
 	connect(this, &QTableWidget::itemChanged,
 					this, &CPlayListView_MainWnd::SaveTag);
+	this->setEditTriggers(QAbstractItemView::SelectedClicked);
 }
 //----------------------------------------------------------------------------
 // ファイルの追加
