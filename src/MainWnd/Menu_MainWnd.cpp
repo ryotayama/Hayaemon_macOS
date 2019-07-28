@@ -1,4 +1,4 @@
-﻿//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 // Menu_MainWnd.cpp : メインウィンドウ用メニューの作成・管理を行う
 //----------------------------------------------------------------------------
 #include "Menu_MainWnd.h"
@@ -2875,36 +2875,39 @@ void CMenu_MainWnd::OnUpdateCheckMenuSelected()
 	strVersion.replace(".", "");
 	int nPos = strVersion.indexOf(u8"β", 0);
 	QString strFileName = "Hayaemon";
-	if(nPos > 0) {
+	if(strVersion.left(nPos) == "001") strFileName += "100.app.zip";
+	else if(nPos > 0) {
 		int nNextVersion = strVersion.left(nPos).toInt() + 1;
 		QString chVersion = QString("%1").arg(nNextVersion);
-		strFileName += chVersion + ".zip";
+		strFileName += chVersion + ".app.zip";
 	}
 	else {
 		int nNextVersion = strVersion.left(nPos).toInt() + 2;
 		QString chVersion = QString("%1").arg(nNextVersion);
-		strFileName += chVersion + ".zip";
+		strFileName += chVersion + ".app.zip";
 	}
-	QUrl url("http://soft.edolfzoku.com/hayaemon2/" + strFileName);
-	QEventLoop loop;
-	connect(&manager, SIGNAL(finished(QNetworkReply *)), &loop, SLOT(quit()));
-	auto header = manager.head(QNetworkRequest(url));
-	loop.exec();
 
-	QVariant len = header->header(QNetworkRequest::ContentLengthHeader);
-	if(len.toLongLong() > 2000000) {
+	BOOL bFileExist = FALSE;
+	QUrl url("http://hayaemon.jp/" + strFileName);
+	QTcpSocket socket;
+	socket.connectToHost(url.host(), 80);
+	if (socket.waitForConnected()) {
+		socket.write("HEAD " + url.path().toUtf8() + " HTTP/1.1\r\n"
+					 "Host: " + url.host().toUtf8() + "\r\n\r\n");
+		if (socket.waitForReadyRead()) {
+			QByteArray bytes = socket.readAll();
+			if (bytes.contains("200 OK")) {
+				bFileExist = TRUE;
+			}
+		}
+	}
+
+	if(bFileExist) {
 		int nButton = QMessageBox::question(nullptr, tr("Question"),
 			tr("The latest version has been released.\n"
 				 "Do you want to access the official site?"));
 		if(nButton == QMessageBox::Yes) {
-			QString lang = QLocale().name();
-			lang.truncate(lang.lastIndexOf('_'));
-			QUrl url2;
-			if (lang == "ja") {
-				url2 = "http://soft.edolfzoku.com/hayaemon2/";
-			} else {
-				url2 = "http://en.edolfzoku.com/hayaemon2/";
-			}
+			QUrl url2("http://hayaemon.jp/");
 			QDesktopServices::openUrl(url2);
 		}
 	}
