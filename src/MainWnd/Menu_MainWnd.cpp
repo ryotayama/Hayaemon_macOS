@@ -3283,6 +3283,7 @@ void CMenu_MainWnd::CreateConnections()
 	connect(m_rMainWnd.actionCloseAll, &QAction::triggered,
 					this, &CMenu_MainWnd::OnCloseAllMenuSelected);
 	// Play
+	m_rMainWnd.actionPlayPlayPause->setShortcut(QKeySequence(Qt::Key_Space));
 	connect(m_rMainWnd.actionPlayPlayPause, &QAction::triggered,
 					this, &CMenu_MainWnd::OnPauseMenuSelected);
 	connect(m_rMainWnd.actionPlayStop, &QAction::triggered,
